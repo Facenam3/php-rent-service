@@ -1,0 +1,5 @@
+[2025-05-14 20:57:39] Error: Exception: This should go into the logs in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 7
+[2025-05-14 21:06:32] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-14 21:06:39] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-14 21:06:41] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-14 21:14:21] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
