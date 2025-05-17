@@ -19,3 +19,10 @@
 [2025-05-17 12:42:47] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
 [2025-05-17 12:43:11] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
 [2025-05-17 12:44:14] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
+[2025-05-17 17:37:50] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/ cars/index.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 22
+[2025-05-17 17:38:23] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/ cars/index.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 22
+[2025-05-17 17:41:37] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 13
+[2025-05-17 17:41:42] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 14
+[2025-05-17 17:41:42] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 14
+[2025-05-17 17:45:02] Error: ErrorException: Undefined property: App\Models\Car::$registration_year in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 18
+[2025-05-17 17:46:20] Error: ErrorException: Undefined property: App\Models\Car::$price in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 21

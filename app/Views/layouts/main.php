@@ -7,7 +7,7 @@
     <link href="/styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="bg-white border-gray-200 dark:bg-lime-700">
+    <nav class="bg-white border-gray-200 dark:bg-lime-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         
@@ -55,7 +55,7 @@
             <a href="/cars" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Our Vehicles</a>
         </li>
         <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Rentals</a>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reservations</a>
         </li>
         <li>
             <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About us</a>
@@ -72,13 +72,13 @@
         <?= $content ?>
     </main>
 
-<footer class="bg-white rounded-lg shadow-sm dark:bg-lime-700 ">
+<footer class="bg-white rounded-lg shadow-sm dark:bg-lime-600 ">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
             <p class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rent a <span class="text-blue-700">Car</span></p>
             </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-200">
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">About</a>
                 </li>
@@ -93,8 +93,8 @@
                 </li>
             </ul>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; <?= date('Y') ?> <a href="https://flowbite.com/" class="hover:underline"> Rent a Car</a>. All Rights Reserved.</span>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-200 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-200">&copy; <?= date('Y') ?> <a href="https://flowbite.com/" class="hover:underline"> Rent a Car</a>. All Rights Reserved.</span>
     </div>
 </footer>
 
