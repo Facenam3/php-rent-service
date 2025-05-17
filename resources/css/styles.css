@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero {
+    background-image: url(https://images.pexels.com/photos/29380865/pexels-photo-29380865/free-photo-of-scenic-mountain-road-with-car-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100svh;
+}
