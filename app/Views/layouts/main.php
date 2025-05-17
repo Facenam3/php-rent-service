@@ -7,7 +7,7 @@
     <link href="/styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="bg-white border-gray-200 dark:bg-purple-900">
+    <nav class="bg-white border-gray-200 dark:bg-lime-700">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         
@@ -72,7 +72,7 @@
         <?= $content ?>
     </main>
 
-<footer class="bg-white rounded-lg shadow-sm dark:bg-purple-900 ">
+<footer class="bg-white rounded-lg shadow-sm dark:bg-lime-700 ">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
