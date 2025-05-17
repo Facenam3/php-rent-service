@@ -21,14 +21,24 @@ class Car extends Model {
     public $created_at;
     public $car_specification;
 
-    public static function getRecent(int $limit) {
+    public static function getRecent(?int $limit = null, ?string $search = null) {
         /** @var \Core\Database $db */
         $db = App::get('database');
-        return $db->fetchAll(
-            "SELECT * FROM " . static::$table . " ORDER BY created_at DESC LIMIT ?" ,
-            [$limit] ,
-            static::class
-        );
+
+        $query = "SELECT * FROM " . static::$table;
+        $params = [];
+ 
+        if($search !== null) {
+            $query .= " WHERE brand LIKE ? OR model LIKE ?";
+            $params = ["%$search%" , "%$search%"];
+        }
+
+        if($limit !== null) {
+            $query .= " LIMIT ?";
+            $params[] = $limit;
+        }
+
+        return $db->fetchAll($query, $params, static::class);
     }
 
 }

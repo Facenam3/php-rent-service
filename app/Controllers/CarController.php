@@ -9,8 +9,18 @@ use Core\Router;
 use Core\View;
 
 class CarController{
-    public function index() {
-        return "All carss";
+   public function index() {
+        $search = $_GET['search'] ?? '';
+        $cars = Car::getRecent(5, $search);
+
+        return View::render(
+            template: 'cars/index',
+            layout:'layouts/main',
+            data: [
+                "cars" => $cars,
+                'search' => $search
+                ]
+            );
     }
 
    

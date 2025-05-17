@@ -1,28 +1,9 @@
 <div>
     <div class="hero flex items-center justify-center  text-white">
-        <div class="p-3">
-            <h1 class="text-3xl ">Welcome to Rent Services</h1>
-            <h2 class="text-center">Cars</h2>
-            <?php foreach($cars as $car) :?>
-                <div class="text-center">
-                        <h3> 
-                            <a href="/cars/<?= $car->id ?>"> <?= htmlspecialchars($car->brand) ?></a>
-                            
-                        </h3>
-                        <p>
-                            <?= htmlspecialchars($car->model) ?>
-                        </p>
-                        <p>
-                            <?= htmlspecialchars($car->type) ?>
-                        </p>
-                        <p>
-                            <?= htmlspecialchars($car->registration_no) ?>
-                        </p>
-                        <p>
-                            <?= htmlspecialchars($car->year) ?>
-                        </p>
-                </div>                
-            <?php endforeach; ?>
+        <div class="p-6 w-3/5 rounded-md border-4 border-double border-lime-300">
+            <h1 class="text-5xl capitalize font-extrabold">Explore your dream car</h1>
+            <p>Explore our wide selection of cars at unbeatable prices. Whether it's for business or adventure, we offer the best service, flexible bookings, and hassle-free rentals to get you on the road smoothly.</p>
+
         </div>
     </div>
 </div>
