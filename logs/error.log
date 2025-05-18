@@ -26,3 +26,17 @@
 [2025-05-17 17:41:42] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 14
 [2025-05-17 17:45:02] Error: ErrorException: Undefined property: App\Models\Car::$registration_year in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 18
 [2025-05-17 17:46:20] Error: ErrorException: Undefined property: App\Models\Car::$price in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 21
+[2025-05-18 16:44:41] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:44:56] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:45:08] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:46:09] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:50:07] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:51:09] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Car, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Model.php on line 15
+[2025-05-18 17:37:46] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:38:19] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:38:20] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:39:13] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:39:30] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:53:57] Error: TypeError: App\Models\Car::getRecent(): Argument #2 ($page) must be of type ?int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 18 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 17:54:12] Error: TypeError: App\Models\Car::getRecent(): Argument #2 ($page) must be of type ?int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 18 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 17:54:13] Error: TypeError: App\Models\Car::getRecent(): Argument #2 ($page) must be of type ?int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 18 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24

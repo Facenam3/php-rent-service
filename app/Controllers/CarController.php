@@ -11,14 +11,21 @@ use Core\View;
 class CarController{
    public function index() {
         $search = $_GET['search'] ?? '';
-        $cars = Car::getRecent(5, $search);
+        $limit = 1;
+        $page = $_GET['page'] ?? 1;
+       
+
+        $cars = Car::getRecent($limit, $page, $search);
+        $total = Car::count($search);
 
         return View::render(
             template: 'cars/index',
             layout:'layouts/main',
             data: [
                 "cars" => $cars,
-                'search' => $search
+                'search' => $search,
+                'currentPage' => $page,
+                'totalPages' => ceil($total / $limit)
                 ]
             );
     }
