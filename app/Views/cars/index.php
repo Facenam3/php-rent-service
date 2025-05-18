@@ -56,7 +56,7 @@
             <?php endforeach; ?>
 
             </div>
-           
+            <?= partial('_pagination', ['currentPage' => $currentPage, 'totalPages' => $totalPages]) ?>
         </div>
     </div>
 
