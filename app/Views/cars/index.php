@@ -1,4 +1,4 @@
-<div>
+<div class="m-5">
 
     <div class="flex items-center justify-center  bg-grey-300">
         <div class="p-3">
@@ -29,22 +29,23 @@
                         </div>
                     </form>
             </div>
-            <div class="flex gap-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                  <?php foreach($cars as $car) :?>
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="https://imgs.search.brave.com/p9CEakaN5oOrebsH7OQh4GzNvOM_SftGsQ7FK7mMcio/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTA4/NTg2MTEyL3Bob3Rv/L2Jtdy01LXNlcmll/cy1vbi10aGUtcGFy/a2luZy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9ZTdqV25D/ajdJbU02cExkLTk3/NUxJQVBTUmtoZlND/LWZmRHA3U3cyRGpP/az0" alt="`" />
+                    <img class="rounded-t-lg car-image" 
+                    src="<?= $car->image_path ?>" 
+                    alt="<?= htmlspecialchars($car->brand ?? 'Car') ?>" />
                     </a>
                     <div class="p-5 ">
                         <a href="#">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?= htmlspecialchars($car->brand) ?></h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Model: <?= htmlspecialchars($car->model) ?></p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Type: <?= htmlspecialchars($car->type) ?></p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Year: <?= htmlspecialchars($car->year) ?></p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 capitalize">Model: <?= htmlspecialchars($car->model) ?></p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 capitalize">Type: <?= htmlspecialchars($car->type) ?></p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 ">Year: <?= htmlspecialchars($car->year) ?></p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Registration: <?= htmlspecialchars($car->registration_no) ?></p>
                         <div class="flex justify-between">
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: <?= htmlspecialchars($car->price_per_day) ?></p>    
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: <?= htmlspecialchars($car->price_per_day) ?> €</p>    
                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             View Details
                         </a>
