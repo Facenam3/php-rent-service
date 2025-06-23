@@ -56,3 +56,24 @@
 [2025-06-21 10:07:31] Error: ErrorException: require_once(C:\xampp\htdocs\php-rent\php-rent-service\public/../routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\public\index.php on line 9
 [2025-06-21 10:08:09] Error: ErrorException: require_once(C:\xampp\htdocs\php-rent\php-rent-service\public/../routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\public\index.php on line 9
 [2025-06-21 10:11:50] Error: Error: Class "App\Controllers\CarsController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 66
+[2025-06-21 11:45:08] Error: ErrorException: session_regenerate_id(): Session ID cannot be regenerated when there is no active session in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 12
+[2025-06-23 23:05:23] Error: ErrorException: Undefined variable $e in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 16
+[2025-06-23 23:06:27] Error: ErrorException: Undefined variable $e in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 16
+[2025-06-23 23:12:20] Error: ErrorException: Undefined variable $schemaFile in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 10
+[2025-06-23 23:13:11] Error: ErrorException: Undefined variable $schemaFILE in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 12
+[2025-06-23 23:13:28] Error: ErrorException: Undefined variable $schemaFILE in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 14
+[2025-06-23 23:14:52] Error: ErrorException: Undefined variable $schemaFILE in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 13
+[2025-06-23 23:15:12] Error: Error: Call to undefined method Core\Database::beginTransaction() in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 17
+[2025-06-23 23:17:39] Error: ErrorException: Undefined variable $schemaFile in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 10
+[2025-06-23 23:43:08] Error: PDOException: SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:44:43] Error: PDOException: SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:46:01] Error: PDOException: SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:47:28] Error: PDOException: SQLSTATE[HY000]: General error: 1 duplicate column name: oauth_provider in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:52:43] Error: PDOException: SQLSTATE[HY000]: General error: 1 table users has no column named password in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:53:33] Error: PDOException: SQLSTATE[HY000]: General error: 1 duplicate column name: oauth_provider in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:54:12] Error: PDOException: SQLSTATE[HY000]: General error: 1 table users has no column named password in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:55:00] Error: PDOException: SQLSTATE[HY000]: General error: 1 table users has no column named role in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:55:43] Error: ErrorException: Creation of dynamic property App\Models\User::$oauth_provider is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-23 23:57:06] Error: ErrorException: Creation of dynamic property App\Models\User::$oauth_provider is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-23 23:57:30] Error: ErrorException: Creation of dynamic property App\Models\User::$oauth_provider is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-23 23:58:26] Error: ErrorException: Creation of dynamic property App\Models\User::$role is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57

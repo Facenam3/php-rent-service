@@ -5,12 +5,22 @@ use Core\App;
 $db = App::get('database');
 
 
-$schemaFILE = __DIR__ . "/../database/schema.sql";
-$sql = file_get_contents($schemaFILE);
-$parts = array_filter(explode(separator: ";", string: $sql));
-foreach($parts as $sqlPart) {
-    $db->query($sqlPart);
-}
-echo "Schema loaded successfully.";
+$schemaFile = __DIR__ . "/../database/schema_fix.sql";
 
-echo "Error loading schema: " . $e->getMessage() . "/n";
+if (!file_exists($schemaFile)) {
+    exit("Schema file not found at: $schemaFile" . PHP_EOL);
+}
+$sql = file_get_contents($schemaFile);
+$parts = array_filter(explode(separator:";", string:$sql));
+echo "Executing SQL statements..." . PHP_EOL;
+foreach ($parts as $sqlPart) {
+    $sqlPart = trim($sqlPart);
+    if (!empty($sqlPart)) {
+        $success = $db->query($sqlPart);
+        if (!$success) {
+            echo "Failed to run: $sqlPart" . PHP_EOL;
+        }
+      
+    }
+}
+  echo "Schema loaded successfully." . PHP_EOL;

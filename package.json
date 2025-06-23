@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "This is a rent-a-car system built with **pure PHP**, using PSR-4 autoloading and a custom MVC structure. The project is designed to reinforce backend fundamentals before transitioning to a Laravel version.",
   "main": "index.js",
- "scripts": {
-  "dev": "npx tailwindcss -i ./resources/css/styles.css -o ./public/styles.css --watch"
+  "scripts": {
+    "dev": "npx tailwindcss -i ./resources/css/styles.css -o ./public/styles.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^3.4.17"
   },

@@ -65,4 +65,9 @@ class Router {
     $controllerClass = "App\\Controllers\\$controller";
     return (new $controllerClass)->$action( ... $params);
   }
+
+  public static function redirect(string $uri):void{
+    header("Location: $uri");
+    exit();
+  }
 }
