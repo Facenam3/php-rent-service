@@ -9,22 +9,22 @@ use App\Models\Review;
 
 $users = [
     [
-        'name'  => "Dalibor",
-        'surname' => "Jovanovski",
+        'first_name'  => "Dalibor",
+        'last_name' => "Jovanovski",
         'email' => "dalibor@test.com",
         'password' => password_hash('dacko123', PASSWORD_BCRYPT),
         'role' => "admin"        
     ],
     [
-        'name'  => "Sara",
-        'surname' => "Jovanovska",
+        'first_name'  => "Sara",
+        'last_name' => "Jovanovska",
         'email' => "sarchito@test.com",
         'password' => password_hash('sarchito', PASSWORD_BCRYPT),
         'role' => "admin"        
     ],
     [
-        'name'  => "Grujo",
-        'surname' => "Jovanovski",
+        'first_name'  => "Grujo",
+        'last_name' => "Jovanovski",
         'email' => "grujo@test.com",
         'password' => password_hash('grujo123', PASSWORD_BCRYPT),
         'role' => "admin"        

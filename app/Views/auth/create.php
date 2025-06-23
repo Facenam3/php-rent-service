@@ -1,7 +1,7 @@
 <div class="flex justify-center items-center min-h-screen bg-gray-200">
     <div class="w-full max-w-sm p-6 rounded-lg shadow-lg bg-white dark:bg-gray-800 border border-orange-500">
         <h2 class="text-4xl font-bold mb-6 text-orange-500 text-center">Login</h2>
-            <form class="space-y-5" method="POST" action="/login">
+            <form class="space-y-5" method="POST" action="/login" id="login">
                 <div class="mb-4">
                     <label for="email" class="block mb-2 text-base font-medium text-gray-900 dark:text-white">Your email</label>
                     <input

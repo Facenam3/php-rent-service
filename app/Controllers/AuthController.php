@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use Core\View;
+use App\Services\Auth;
+use Core\Router;
 
 class AuthController {
     public function create() {
@@ -13,7 +15,21 @@ class AuthController {
     }
 
     public function store() {
-        var_dump($_POST);
-        die('form sent!');
+       if($_SERVER['REQUEST_METHOD'] === "POST") {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        if(Auth::attempt($email, $password)) {
+         Router::redirect('/');
+        }
+       }
+
+       return View::render(
+            template: "auth/create",
+            layout: 'layouts/main',
+            data: [
+                "error" => "Invalid credentials"
+            ]
+        );
     }
 }
