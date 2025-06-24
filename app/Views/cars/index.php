@@ -1,6 +1,6 @@
 <div class="m-5">
 
-    <div class="flex items-center justify-center  bg-grey-300">
+    <div class="flex items-center justify-center  bg-gray-300">
         <div class="p-3">
             <h1 class="text-4xl text-center m-6 capitalize font-extrabold ">Our Vehicles</h1>
             <div class="w-full mb-2">
@@ -35,7 +35,6 @@
                     <img class="rounded-t-lg car-image" 
                     src="<?= $car->image_path ?>" 
                     alt="<?= htmlspecialchars($car->brand ?? 'Car') ?>" />
-                    </a>
                     <div class="p-5 ">
                         <a href="#">
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><?= htmlspecialchars($car->brand) ?></h5>
