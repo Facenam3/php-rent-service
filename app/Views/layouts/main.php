@@ -54,14 +54,22 @@
                 </li>
             </ul>
         </div>
-        <div class="hidden md:flex items-center md:order-2 space-x-4">
-            <a href="/login" class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">
-                Login
-            </a>
-            <a href="/register" class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">
-                Register
-            </a>
-        </div>
+        <?php if($user)  :?>
+            <div class="hidden md:flex items-center md:order-2 space-x-4">
+                <form action="/logout" method="POST">
+                    <button class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">Logout</button>
+                </form>
+            </div>
+        <?php else : ?>
+            <div class="hidden md:flex items-center md:order-2 space-x-4">
+                <a href="/login" class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">
+                    Login
+                </a>
+                <a href="/register" class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">
+                    Register
+                </a>
+            </div>
+       <?php endif; ?>
     </nav>
 
     <main class="min-h-screen">
