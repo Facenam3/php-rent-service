@@ -13,7 +13,7 @@ This is a rent-a-car system built with **pure PHP**, using PSR-4 autoloading and
 
 ## 💡 Learning Approach
 
-This project is being built as I follow learning materials from various online resources (e.g. Udemy courses). However, the code is written by me and tailored for my own understanding and design.
+This project is being built as I follow learning materials from various online resources (e.g. Udemy courses, Youtube courses, Geeksforgeeks, etc). However, the code is written by me and tailored for my own understanding and design.
 
 ## 🛠️ Tech Stack
 
