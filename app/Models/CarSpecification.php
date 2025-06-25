@@ -5,14 +5,14 @@ use Core\Model;
 use Core\App;
 
 class CarSpecification extends Model {
-    protected static $table = 'car_specifications';
-    public $id;
-    public $car_id;
-    public $fuel_type;
-    public $transmission;
-    public $air_condition;
-    public $seats;
-    public $created_at;
+    protected static string $table = 'car_specifications';
+    public int $id;
+    public int $car_id;
+    public string $fuel_type;
+    public string $transmission;
+    public string $air_condition;
+    public string $seats;
+    public string $created_at;
 
     public static function forCar($carId) : ?static {
         $db = App::get('database');

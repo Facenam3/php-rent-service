@@ -100,3 +100,4 @@
 [2025-06-24 21:17:31] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 24
 [2025-06-24 21:17:32] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 24
 [2025-06-24 21:17:32] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 24
+[2025-06-25 23:58:55] Error: TypeError: Cannot assign string to property App\Models\Car::$price_per_day of type int in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
