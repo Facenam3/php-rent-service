@@ -6,20 +6,20 @@ use Core\App;
 use core\Router;
 
 class Car extends Model {
-    protected static $table = 'cars';
+    protected static string $table = 'cars';
 
-    public $id;
-    public $user;
-    public $brand;
-    public $model;
-    public $type;
-    public $registration_no;
-    public $year;
-    public $available;
-    public $price_per_day;
-    public $image_path;
-    public $created_at;
-    public $car_specification;
+    public int $id;
+    public string $user;
+    public string $brand;
+    public string $model;
+    public string $type;
+    public string $registration_no;
+    public int $year;
+    public string $available;
+    public string $price_per_day;
+    public string $image_path;
+    public string $created_at;
+    public string $car_specification;
 
     public static function store(array $data) : static {
          $imageContents = false;

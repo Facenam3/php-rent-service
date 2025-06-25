@@ -269,6 +269,7 @@ $db->query("DELETE FROM users");
 $db->query("DELETE FROM cars");
 $db->query("DELETE FROM car_specifications");
 $db->query("DELETE FROM reviews");
+$db->query("DELETE FROM remember_tokens");
 
 $db->query(
     "DELETE FROM sqlite_sequence WHERE name IN ('users', 'cars', 'car_specifications', 'reviews')"

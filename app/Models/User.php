@@ -5,7 +5,7 @@ use Core\Model;
 use Core\App;
 
 class User extends Model {
-    protected static $table = 'users';
+    protected static string $table = 'users';
     public int $id;
     public ?string $oauth_provider = null;
     public ?string $oauth_uid = null;

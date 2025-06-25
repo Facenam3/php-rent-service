@@ -5,8 +5,8 @@ use Core\Model;
 use Core\App;
 
 class Review extends Model {
-    protected static $table = 'reviews';
-    public $id;
+    protected static string $table = 'reviews';
+    public int $id;
     public $car_id;
     public $user_id;
     public $rating;
