@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </div>
-        <?php if($user)  :?>
+        <?php if(isset($user))  :?>
             <div class="hidden md:flex items-center md:order-2 space-x-4">
                 <form action="/logout" method="POST">
                     <button class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">Logout</button>

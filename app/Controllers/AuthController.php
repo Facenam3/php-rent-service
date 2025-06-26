@@ -5,6 +5,7 @@ namespace App\Controllers;
 use Core\View;
 use App\Services\Auth;
 use Core\Router;
+use App\Services\CSRF;
 
 class AuthController {
     public function create() {
@@ -16,6 +17,9 @@ class AuthController {
 
     public function store() {
        if($_SERVER['REQUEST_METHOD'] === "POST") {
+        if(!CSRF::verify()) {
+            Router::pageExpired();
+        }
         $email = $_POST['email'];
         $password = $_POST['password'];
         $remember = isset($_POST['remember']) ? (bool)$_POST['remember'] : false;
