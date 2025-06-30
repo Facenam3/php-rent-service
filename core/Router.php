@@ -72,7 +72,7 @@ class Router {
     return (new $controllerClass)->$action( ... $params);
   }
 
-  public static function redirect(string $uri):void{
+  public static function redirect(string $uri, array $data = []):void{
     header("Location: $uri");
     exit();
   }
