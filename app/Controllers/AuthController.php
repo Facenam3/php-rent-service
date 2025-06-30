@@ -6,6 +6,8 @@ use Core\View;
 use App\Services\Auth;
 use Core\Router;
 use App\Services\CSRF;
+use Core\Validator;
+use App\Models\User;
 
 class AuthController {
     public function create() {
@@ -15,27 +17,89 @@ class AuthController {
         );
     }
 
-    public function store() {
-       if($_SERVER['REQUEST_METHOD'] === "POST") {
-        if(!CSRF::verify()) {
-            Router::pageExpired();
-        }
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $remember = isset($_POST['remember']) ? (bool)$_POST['remember'] : false;
-
-        if(Auth::attempt($email, $password, $remember)) {
-         Router::redirect('/');
-        }
-       }
-
-       return View::render(
-            template: "auth/create",
-            layout: 'layouts/main',
-            data: [
-                "error" => "Invalid credentials"
-            ]
+    public function register() : string {
+        return View::render(
+            template: "auth/register",
+            layout: "layouts/main"
         );
+    }
+
+    public function store(): void {
+         if($_SERVER['REQUEST_METHOD'] === "POST") {
+            if(!CSRF::verify()) {
+                Router::pageExpired();
+            }
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $remember = isset($_POST['remember']) ? (bool)$_POST['remember'] : false;
+            $errors = Validator::validate($_POST,[
+                'email' => 'required',
+                'password' => 'required'
+            ]);
+
+            if(empty($errors)) {
+                if(Auth::attempt($email, $password, $remember)) {
+                    Router::redirect('/');
+                } else {
+                    $_SESSION['error'] = "Invalid email or password.";
+                    $_SESSION['old'] = ['email' => $email, 'remember' => $remember];
+                    Router::redirect('/login');
+                }
+            } else {
+                $_SESSION['errors'] = $errors;
+                $_SESSION['old'] = ['email' => $email, 'remember' => $remember];
+                Router::redirect('/login');
+            }           
+       }
+    //    return View::render(
+    //         template: "auth/create",
+    //         layout: 'layouts/main',
+    //         data: [
+    //             "errors" => $errors,
+    //             'validationErrors' => $validationErrors
+    //         ]
+    //     );
+    }
+
+    public function storeUser() {
+        if($_SERVER["REQUEST_METHOD"] === "POST") {
+            if(!CSRF::verify()) {
+                Router::pageExpired();
+            }
+            $first_name = trim(ucfirst($_POST['first_name']));
+            $last_name = trim(ucfirst($_POST['last_name']));
+            $email = trim($_POST['email']);
+            $password = $_POST['password'];
+            
+            $errors = Validator::validate($_POST,[
+                'first_name' => "required",
+                'last_name' => "required",
+                'email' => 'required|email|unique:users,email',
+                'password' => 'required|min:6'
+            ]);
+
+            if(!empty($errors)) {
+                $_SESSION['errors'] = $errors;
+                $_SESSION['old'] = [
+                    'first_name' => $first_name,
+                    'last_name' => $last_name,
+                    'email' => $email
+                ];
+                Router::redirect('/register');
+            }
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+            $user = User::create([
+                'first_name' => $first_name,
+                'last_name' => $last_name,
+                'email' => $email,
+                'password' => $hashedPassword
+            ]);
+
+            if($user) {
+                $_SESSION['success'] = "Registration successfull. Please log in.";
+                Router::redirect('/login');
+            }
+        }
     }
 
     public function destroy() {
