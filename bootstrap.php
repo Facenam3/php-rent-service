@@ -15,4 +15,5 @@ $config = require_once __DIR__ . '/config.php';
 
 App::bind('config', $config);
 App::bind('database',  new Database($config['database']));
+App::bind('google', $config['google']);
 

@@ -14,3 +14,6 @@
 
  $router->add('GET', '/register', "AuthController@register");
  $router->add("POST", "/register", "AuthController@storeUser");
+
+ $router->add('GET', '/auth/google/redirect', "GoogleController@redirectToGoogle");
+ $router->add('GET', '/auth/google/callback', "GoogleController@handleGoogleCallback");

@@ -12,7 +12,9 @@
             "Core\\" : "core/"
         }
     },
-    "require": {},
+    "require": {
+        "google/apiclient": "^2.0"
+    },
     "scripts": {
         "schema:load": "php bin/schema_load.php",
         "schema:fixtures": "php bin/schema_fixtures.php "
