@@ -1,24 +1,34 @@
-# 🚗 Rent-a-Car Project (Pure PHP)
+🚗 Rent-a-Car Project (Pure PHP)
+📌 Overview
+This is a rent-a-car system built with pure PHP, using PSR-4 autoloading and a custom MVC structure. The project is designed to reinforce backend fundamentals before transitioning to a Laravel version.
+It now includes Google OAuth login/registration and email notifications for user registration and reservations.
 
-## 📌 Overview
+🎯 Goals
+Learn PSR-4 and custom PHP architecture
 
-This is a rent-a-car system built with **pure PHP**, using PSR-4 autoloading and a custom MVC structure. The project is designed to reinforce backend fundamentals before transitioning to a Laravel version.
+Build full CRUD with routing, SQLite, and authentication
 
-## 🎯 Goals
+Integrate third-party services: Google OAuth login and email notifications
 
-- Learn PSR-4 and custom PHP architecture
-- Build full CRUD with routing, SQLite, and authentication
-- Style using Tailwind CSS
-- Practice Git: branching, merging, pull requests
+Style using Tailwind CSS
 
-## 💡 Learning Approach
+Practice Git: branching, merging, pull requests
 
-This project is being built as I follow learning materials from various online resources (e.g. Udemy courses, Youtube courses, Geeksforgeeks, etc). However, the code is written by me and tailored for my own understanding and design.
+💡 Learning Approach
+This project is built while following learning materials from various online resources (Udemy, YouTube, GeeksforGeeks, etc). The code is authored and customized to fit my understanding and architecture preferences.
+New integrations such as Google OAuth and mailing services are implemented to explore working with external APIs and improve user experience.
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
+PHP 8+
 
-- PHP 8+
-- SQLite
-- Tailwind CSS
-- Composer (PSR-4 autoloading)
-- Git + GitHub (with feature branches)
+SQLite
+
+Tailwind CSS
+
+Composer (PSR-4 autoloading)
+
+PHPMailer for sending emails
+
+Google API PHP Client for OAuth authentication
+
+Git + GitHub (with feature branches)
