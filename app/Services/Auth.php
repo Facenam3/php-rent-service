@@ -31,6 +31,11 @@ class Auth {
         return static::$user;
     }
 
+    public static function login($user) : void {
+        session_regenerate_id(true);
+        $_SESSION['user_id'] = $user->id;
+    }
+
     public static function logout() : void {
         RememberMe::clearToken();
         session_destroy();

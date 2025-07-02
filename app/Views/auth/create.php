@@ -65,5 +65,13 @@
                     Submit
                 </button>
             </form>
+            <div class="mt-3">
+                 <a href="/auth/google/redirect" 
+                    class="w-full text-sm font-medium text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md mb-2 flex items-center justify-center">
+                    <i class="fa-brands fa-google mr-2"></i>
+                    Login with Google
+                </a>
+            </div>
+           
     </div>
 </div>
