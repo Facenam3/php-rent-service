@@ -26,6 +26,8 @@ class GoogleController {
             Router::redirect('/login');
         }
 
+        $mailer = App::get('mailer');
+
         try {
             $userData = $this->googleAuth->authenticate($_GET['code']);
 
@@ -43,6 +45,11 @@ class GoogleController {
                     'password' => null
                 ]);
             }
+            $mailer->send(
+                    $user->email,
+                    'Welcome to Rent-a-Car',
+                    "Hi {$user->first_name},<br>Thank you for registering with Rent-a-Car using Google!"
+            );
 
            Auth::login($user);
 

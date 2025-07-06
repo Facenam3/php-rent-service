@@ -127,3 +127,5 @@
 [2025-06-30 16:28:38] Error: ErrorException: Undefined variable $errors in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\auth\register.php on line 3
 [2025-06-30 16:44:47] Error: PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 38
 [2025-07-02 22:52:45] Error: Exception: No google is bound in the container in C:\xampp\htdocs\php-rent\php-rent-service\core\App.php on line 16
+[2025-07-06 19:32:38] Error: ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 892
+[2025-07-06 19:34:52] Error: ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 892
