@@ -7,6 +7,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use Core\App;
 use Core\Database;
 use Core\ErrorHandler;
+use App\Services\Mailer;
 
 set_exception_handler([ErrorHandler::class, 'handleException']);
 set_error_handler([ErrorHandler::class, 'handleError']);
@@ -16,4 +17,5 @@ $config = require_once __DIR__ . '/config.php';
 App::bind('config', $config);
 App::bind('database',  new Database($config['database']));
 App::bind('google', $config['google']);
+App::bind('mailer', new Mailer($config['mail']));
 

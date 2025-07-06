@@ -8,6 +8,7 @@ use Core\Router;
 use App\Services\CSRF;
 use Core\Validator;
 use App\Models\User;
+use Core\App;
 
 class AuthController {
     public function create() {
@@ -66,6 +67,7 @@ class AuthController {
             if(!CSRF::verify()) {
                 Router::pageExpired();
             }
+            $mailer = App::get('mailer');
             $first_name = trim(ucfirst($_POST['first_name']));
             $last_name = trim(ucfirst($_POST['last_name']));
             $email = trim($_POST['email']);
@@ -96,6 +98,11 @@ class AuthController {
             ]);
 
             if($user) {
+                $mailer->send(
+                    $user->email,
+                    "Welcome to Rent A Car",
+                    "Hi {$user->first_name}, thanks for registering!"
+                );
                 $_SESSION['success'] = "Registration successfull. Please log in.";
                 Router::redirect('/login');
             }
