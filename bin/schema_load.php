@@ -5,7 +5,7 @@ use Core\App;
 $db = App::get('database');
 
 
-$schemaFile = __DIR__ . "/../database/schema.sql";
+$schemaFile = __DIR__ . "/../database/schema_fix.sql";
 
 if (!file_exists($schemaFile)) {
     exit("Schema file not found at: $schemaFile" . PHP_EOL);
