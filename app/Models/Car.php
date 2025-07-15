@@ -15,11 +15,18 @@ class Car extends Model {
     public string $type;
     public string $registration_no;
     public int $year;
-    public string $available;
+    public string $status;
     public string $price_per_day;
     public string $image_path;
     public string $created_at;
     public string $car_specification;
+
+    public ?string $fuel_type = null;
+    public ?float $fuel_consumption = null;
+    public ?string $max_passengers = null;
+    public ?string $doors = null;
+    public ?string $transmission = null;
+    public ?string $air_condition = null;
 
     public static function store(array $data) : static {
          $imageContents = false;
@@ -39,7 +46,7 @@ class Car extends Model {
         }
 
         if($imageContents !== false) {
-            $uploadDir = "uploads/vehicle/";
+            $uploadDir = "public/uploads/vehicle/";
             if(!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
@@ -61,11 +68,21 @@ class Car extends Model {
         /** @var \Core\Database $db */
         $db = App::get('database');
 
-        $query = "SELECT * FROM " . static::$table;
+        $query = "
+                SELECT cars.*, 
+                    cs.fuel_type, 
+                    cs.fuel_consumption, 
+                    cs.doors,
+                    cs.max_passengers,
+                    cs.transmission,
+                    cs.air_condition
+                FROM cars
+                LEFT JOIN car_specifications cs ON cs.car_id = cars.id
+        ";
         $params = [];
  
         if($search !== null) {
-            $query .= " WHERE brand LIKE ? OR model LIKE ?";
+            $query .= " WHERE cars.brand LIKE ? OR cars.model LIKE ?";
             $params = ["%$search%" , "%$search%"];
         }
 

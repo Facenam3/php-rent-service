@@ -11,7 +11,9 @@ class CarSpecification extends Model {
     public string $fuel_type;
     public string $transmission;
     public string $air_condition;
-    public string $seats;
+    public string $doors;
+    public string $fuel_consumption;
+    public string $max_passengers;
     public string $created_at;
 
     public static function forCar($carId) : ?static {

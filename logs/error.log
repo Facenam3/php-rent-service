@@ -129,3 +129,16 @@
 [2025-07-02 22:52:45] Error: Exception: No google is bound in the container in C:\xampp\htdocs\php-rent\php-rent-service\core\App.php on line 16
 [2025-07-06 19:32:38] Error: ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 892
 [2025-07-06 19:34:52] Error: ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 892
+[2025-07-15 21:32:01] Error: PDOException: SQLSTATE[HY000]: General error: 1 table cars has no column named available in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-15 21:34:24] Error: PDOException: SQLSTATE[HY000]: General error: 1 table car_specifications has no column named max_passengers in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-15 21:35:54] Error: ErrorException: Creation of dynamic property App\Models\CarSpecification::$max_passengers is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-15 21:36:34] Error: ErrorException: Creation of dynamic property App\Models\Location::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-15 21:37:54] Error: Error: Typed property App\Models\Car::$registration_no must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:38:30] Error: Error: Typed property App\Models\Car::$registration_no must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:38:48] Error: Error: Typed property App\Models\Car::$registration_no must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:40:09] Error: ErrorException: Undefined variable $fuel_consumption in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:40:22] Error: ErrorException: Undefined property: App\Models\Car::$fuel_consumption in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:41:28] Error: ErrorException: Undefined property: App\Models\Car::$car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:41:28] Error: ErrorException: Undefined property: App\Models\Car::$car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:48:36] Error: ErrorException: Creation of dynamic property App\Models\Car::$fuel_type is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-07-15 21:50:54] Error: ErrorException: Creation of dynamic property App\Models\Car::$doors is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
