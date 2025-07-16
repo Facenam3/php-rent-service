@@ -142,3 +142,15 @@
 [2025-07-15 21:41:28] Error: ErrorException: Undefined property: App\Models\Car::$car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
 [2025-07-15 21:48:36] Error: ErrorException: Creation of dynamic property App\Models\Car::$fuel_type is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
 [2025-07-15 21:50:54] Error: ErrorException: Creation of dynamic property App\Models\Car::$doors is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-07-15 23:26:52] Error: ErrorException: Undefined variable $cars in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 47
+[2025-07-16 21:45:25] Error: PDOException: SQLSTATE[HY000]: General error: 1 unknown column "reservation_id" in foreign key definition in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-16 21:48:19] Error: PDOException: SQLSTATE[HY000]: General error: 1 unknown column "reservation_id" in foreign key definition in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-16 21:55:38] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 75
+[2025-07-16 21:55:46] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 75
+[2025-07-16 21:56:10] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 76
+[2025-07-16 21:58:14] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 76
+[2025-07-17 00:10:18] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$car_id is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 00:11:37] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$status is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 00:13:10] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 00:28:58] Error: Error: Call to undefined method App\Models\Reservation::car() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\thank-you.php on line 8
+[2025-07-17 00:32:03] Error: Error: Call to undefined method App\Models\Reservation::car() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\thank-you.php on line 8

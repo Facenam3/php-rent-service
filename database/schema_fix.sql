@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS reservations;
 DROP TABLE IF EXISTS reviews;
 DROP TABLE IF EXISTS remember_tokens;
 DROP TABLE IF EXISTS locations;
+DROP TABLE IF EXISTS payments;
 
 CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -77,6 +78,17 @@ CREATE TABLE reservations (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL,
     FOREIGN KEY (pickup_location_id) REFERENCES locations(id),
     FOREIGN KEY (dropoff_location_id) REFERENCES locations(id)
+);
+CREATE TABLE payments (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    reservation_id INTEGER NOT NULL,
+    payment_method TEXT NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    status TEXT DEFAULT 'pending',
+    transaction_id TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (reservation_id) REFERENCES reservations(id) ON DELETE CASCADE
 );
 CREATE TABLE remember_tokens (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
