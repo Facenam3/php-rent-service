@@ -17,3 +17,7 @@
 
  $router->add('GET', '/auth/google/redirect', "GoogleController@redirectToGoogle");
  $router->add('GET', '/auth/google/callback', "GoogleController@handleGoogleCallback");
+
+ $router->add("GET",'/reservations', 'ReservationController@create');
+ $router->add("POST",'/reservations/store', "ReservationController@store");
+ $router->add("GET", "/reservations/thank-you", "ReservationController@thankYou");

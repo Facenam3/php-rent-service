@@ -1,4 +1,4 @@
-<div class="m-5">
+<div >
 
     <div class="flex items-center justify-center  bg-gray-300">
         <div class="p-3">
@@ -62,7 +62,7 @@
 
                                 <div class="flex items-center gap-2">
                                     <i class="fas fa-users text-gray-500"></i>
-                                    <?= $car->max_passengers ?? '5' ?> pax
+                                    <?= $car->max_passengers ?? '5' ?> persons
                                 </div>
 
                                 <div class="flex items-center gap-2">

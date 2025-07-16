@@ -46,7 +46,7 @@ class Car extends Model {
         }
 
         if($imageContents !== false) {
-            $uploadDir = "public/uploads/vehicle/";
+            $uploadDir = "uploads/vehicle/";
             if(!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
@@ -100,6 +100,23 @@ class Car extends Model {
         return $db->fetchAll($query, $params, static::class);
     }
 
+    public static function getAvailable() {
+        $db = App::get('database');
+        $query = "
+            SELECT cars.*, 
+                cs.fuel_type, 
+                cs.fuel_consumption, 
+                cs.doors,
+                cs.max_passengers,
+                cs.transmission,
+                cs.air_condition
+            FROM cars
+            LEFT JOIN car_specifications cs ON cs.car_id = cars.id
+            WHERE cars.status = 'available'
+        ";
+        return $db->fetchAll($query, [] , static::class);
+    }
+
     public static function count(?string $search = null): int {
         /** @var \Core\Database $db */
         $db = App::get('database');
@@ -115,5 +132,10 @@ class Car extends Model {
         return (int) $db->query($query, $params)->fetchColumn();
     }
 
+    public static function findById(int $id) : ?Car {
+        $db = App::get('database');
 
+        $result = $db->fetch("SELECT * FROM cars WHERE id = ?", [$id], static::class);
+        return $result ? $result : null;
+    }
 }

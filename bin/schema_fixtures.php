@@ -277,7 +277,7 @@ $reviews = [
 ];
 
 $locations = [
-   [ 'name' => "Airport",],
+   ['name' => "Airport"],
    ['name' => 'City Center']
     
 ];

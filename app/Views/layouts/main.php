@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/8c0d052db3.js" crossorigin="anonymous"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link href="/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <a href="/cars" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Our Vehicles</a>
                 </li>
                 <li>
-                    <a href="#" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Reservations</a>
+                    <a href="/reservations" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Reservations</a>
                 </li>
                 <li>
                     <a href="#" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">About us</a>
@@ -102,8 +103,9 @@
             <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-200">&copy; <?= date('Y') ?> <a href="https://flowbite.com/" class="hover:underline"> Rent a Car</a>. All Rights Reserved.</span>
         </div>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script src="/script.js"></script>
+<script src="/reservation.js"></script>
 </body>
 </html>
