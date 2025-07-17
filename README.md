@@ -18,7 +18,8 @@ It includes:
 ✅ Use Alpine.js for a multi-step reservation wizard.
 ✅ Practice Git workflows: branching, merging, pull requests.
 
-✨ Features
+✨ Features 
+
 ✅ User Authentication:
 
 - Register/login with email & password
