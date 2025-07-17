@@ -21,3 +21,7 @@
  $router->add("GET",'/reservations', 'ReservationController@create');
  $router->add("POST",'/reservations/store', "ReservationController@store");
  $router->add("GET", "/reservations/thank-you", "ReservationController@thankYou");
+
+ $router->add("GET", "/payments/stripe-checkout", "StripeController@checkout");
+ $router->add("GET","/payments/success", "StripeController@success");
+ $router->add("GET", "/payments/cancel", "StripeController@cancel");

@@ -14,7 +14,8 @@
     },
     "require": {
         "google/apiclient": "^2.0",
-        "phpmailer/phpmailer": "^6.10"
+        "phpmailer/phpmailer": "^6.10",
+        "stripe/stripe-php": "^17.4"
     },
     "scripts": {
         "schema:load": "php bin/schema_load.php",

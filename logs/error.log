@@ -154,3 +154,5 @@
 [2025-07-17 00:13:10] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
 [2025-07-17 00:28:58] Error: Error: Call to undefined method App\Models\Reservation::car() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\thank-you.php on line 8
 [2025-07-17 00:32:03] Error: Error: Call to undefined method App\Models\Reservation::car() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\thank-you.php on line 8
+[2025-07-17 22:53:22] Error: ErrorException: Creation of dynamic property App\Models\Payment::$status is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 22:58:24] Error: ErrorException: Undefined array key "success_url" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\StripeController.php on line 51

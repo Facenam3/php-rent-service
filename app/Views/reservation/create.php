@@ -39,15 +39,39 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div>
-          <label for="start_date" class="block mb-1 font-medium text-gray-200">Pickup Date & Time</label>
-          <input type="datetime-local" x-model="pickupDate" name="start_date" class="w-full border rounded p-2 text-black">
-        </div>
-        <div>
-          <label for="end_date" class="block mb-1 font-medium text-gray-200">Return Date & Time</label>
-          <input type="datetime-local" x-model="returnDate" name="end_date"class="w-full border rounded p-2 text-black">
-        </div>
+      
+      <div 
+            x-data="{ 
+                now: (new Date()).toISOString().slice(0,16) 
+            }"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4"
+        >
+          <div>
+            <label for="start_date" class="block mb-1 font-medium text-gray-200">
+              Pickup Date & Time
+            </label>
+            <input 
+              type="datetime-local" 
+              x-model="pickupDate" 
+              name="start_date" 
+              :min="now" 
+              class="w-full border rounded p-2 text-black"
+            >
+          </div>
+
+          <div>
+            <label for="end_date" class="block mb-1 font-medium text-gray-200">
+              Return Date & Time
+            </label>
+            <input 
+              type="datetime-local" 
+              x-model="returnDate" 
+              name="end_date" 
+              :min="pickupDate || now"
+              class="w-full border rounded p-2 text-black"
+            >
+          </div>
+
       </div>
 
       <button type="button" @click="step = 2" class="mt-4 w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700">
@@ -118,7 +142,7 @@
         </label>
         <label class="flex items-center space-x-2">
           <input type="radio" name="payment_method" value="card" x-model="paymentMethod">
-          <span class="text-white">💳 Pay with Card (Stripe soon)</span>
+          <span class="text-white">💳 Pay with Card (Stripe)</span>
         </label>
       </div>
 
