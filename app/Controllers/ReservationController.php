@@ -7,6 +7,7 @@ use Core\View;
 use App\Models\Car;
 use App\Models\Location;
 use App\Models\Reservation;
+use App\Models\Payment;
 use App\Models\User;
 use App\Services\CSRF;
 use Core\Router;
@@ -40,6 +41,7 @@ class ReservationController {
             $total_price = $_POST['total_price'];
             $pickup_location_id = $_POST['pickup_location_id'];
             $dropoff_location_id = $_POST['dropoff_location_id'];
+            $payment_method = $_POST['payment_method'] ?? 'cash';
             $status = 'complete';
 
             $user = $user_id ? User::findById($user_id) : null;
@@ -64,6 +66,23 @@ class ReservationController {
                 'dropoff_location_id' => $dropoff_location_id
             ]);
 
+            if(!$reservation) {
+                Router::redirect("/reservations/create?error=failed");
+            }
+
+            $payment = Payment::create([
+                'reservation_id' => $reservation->id,
+                'payment_method' => $payment_method,
+                'amount' => $total_price,
+                'status' => $payment_method === 'card' ? 'pending' : 'cash',
+                'transaction_id' => ''
+            ]);
+
+            if($payment_method === 'card') {
+                Router::redirect('/payments/stripe-checkout?reservation_id=' . $reservation->id);
+                return;
+            }
+
             $message = "
                 Hello,
 
@@ -78,37 +97,34 @@ class ReservationController {
                 We look forward to seeing you!
             ";
 
-            if($reservation) {
-                $mailer->send(
-                    $email,
-                    "Your Car Reservation Confirmation", 
-                    nl2br($message)
-                );
-            }
+            $mailer->send(
+                $email,
+                "Your Car Reservation Confirmation", 
+                nl2br($message)
+            );
+            
 
             Router::redirect('/reservations/thank-you?id=' . $reservation->id);
-        }else {
-            Router::redirect('/reservations/create?error=failed');
         }
     }
 
     public function thankYou() {
-    $reservationId = $_GET['id'] ?? null;
+        $reservationId = $_GET['id'] ?? null;
 
-    if (!$reservationId) {
-        Router::redirect('/');
+        if (!$reservationId) {
+            Router::redirect('/');
+        }
+
+        $reservation = Reservation::find($reservationId);
+        $car = $reservation ? Car::find($reservation->car_id) : null;
+
+        return View::render(
+            template: 'reservation/thank-you',
+            layout: 'layouts/main',
+            data: [
+                'reservation' => $reservation,
+                'car' => $car
+                ]
+        );
     }
-
-    $reservation = Reservation::find($reservationId);
-    $car = $reservation ? Car::find($reservation->car_id) : null;
-
-    return View::render(
-        template: 'reservation/thank-you',
-        layout: 'layouts/main',
-        data: [
-            'reservation' => $reservation,
-            'car' => $car
-            ]
-    );
-}
 }

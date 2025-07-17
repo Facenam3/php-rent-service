@@ -19,5 +19,9 @@ return [
         'password' => 'your-app-password',
         'from_email' => 'your-email@gmail.com',
         'from_name' => 'Rent A Car App'
+    ],    
+    'stripe' => [
+        'secret_key' => 'your-stripe-secret-key',
+        'publishalbe_key' => 'your-stripe-publishable-key'
     ]
 ];
