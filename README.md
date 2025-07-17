@@ -1,6 +1,7 @@
 🚗 Rent-a-Car Project (Pure PHP)
 
-📌 Overview
+📌 Overview:
+
 This is a Rent-a-Car system built with pure PHP, following PSR-4 autoloading and a custom MVC structure.
 The project reinforces backend fundamentals before transitioning to a Laravel version.
 It includes:
@@ -8,7 +9,8 @@ It includes:
 ✅ Email notifications for user registration & reservations
 ✅ Multi-step reservation flow with Alpine.js
 
-🎯 Goals
+🎯 Goals :
+
 ✅ Learn and apply PSR-4 with a custom PHP architecture.
 ✅ Build full CRUD with routing, SQLite, and authentication.
 ✅ Integrate third-party services: Google OAuth & email notifications.
@@ -17,22 +19,33 @@ It includes:
 ✅ Practice Git workflows: branching, merging, pull requests.
 
 ✨ Features
-✅ User Authentication
+✅ User Authentication:
+
 - Register/login with email & password
 - Google OAuth login & registration
-✅ Car Management
+  
+✅ Car Management:
+
 - List available cars with details & pricing
 - Image support
-✅ Reservation System
+  
+✅ Reservation System:
+
 - Multi-step reservation wizard (pickup/drop-off, car selection, user info, payment method)
 - Email confirmation with reservation details
+  
 ✅ Email Notifications
+
 - Sends a welcome email on registration
 - Sends a reservation confirmation email
+  
 ✅ Routing & MVC
+
 - Custom lightweight MVC framework
 - PSR-4 autoloading with Composer
+  
 ✅ Frontend
+
 - Tailwind CSS for styling
 - Alpine.js for reactive UI
 
