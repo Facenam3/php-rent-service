@@ -35,7 +35,7 @@ class StripeController {
             Router::redirect('/');
         }
 
-        $stripe = new \stripe\StripeClient('sk_test_51RlxuOPqdFmN8IPqZyP8ku0nIdWDyKeuCnQCebpnHeKglYQgN7B3Qi1mA49qaQPsEX5hQPNbqDdVdukH8uHNuC5N004smi2c60');
+       $stripe = $this->stripe;
 
         $session = $stripe->checkout->sessions->create([
                 'payment_method_types' => ['card'],
