@@ -10,13 +10,12 @@ It includes:
 - ✅ Multi-step reservation flow with Alpine.js
 
 🎯 Goals :
-
-✅ Learn and apply PSR-4 with a custom PHP architecture.
-✅ Build full CRUD with routing, SQLite, and authentication.
-✅ Integrate third-party services: Google OAuth & email notifications.
-✅ Style UI with Tailwind CSS.
-✅ Use Alpine.js for a multi-step reservation wizard.
-✅ Practice Git workflows: branching, merging, pull requests.
+- ✅ Learn and apply PSR-4 with a custom PHP architecture.
+- ✅ Build full CRUD with routing, SQLite, and authentication.
+- ✅ Integrate third-party services: Google OAuth & email notifications.
+- ✅ Style UI with Tailwind CSS.
+- ✅ Use Alpine.js for a multi-step reservation wizard.
+- ✅ Practice Git workflows: branching, merging, pull requests.
 
 ✨ Features 
 
