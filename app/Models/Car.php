@@ -138,4 +138,11 @@ class Car extends Model {
         $result = $db->fetch("SELECT * FROM cars WHERE id = ?", [$id], static::class);
         return $result ? $result : null;
     }
+
+    public static function reserved($id) {
+        $db = App::get("database");
+
+        $sql = "UPDATE cars SET status = 'booked' WHERE id = ?";
+       return $db->query($sql, [$id]);
+    }
 }

@@ -70,6 +70,8 @@ class ReservationController {
                 Router::redirect("/reservations/create?error=failed");
             }
 
+            Car::reserved($car_id);
+
             $payment = Payment::create([
                 'reservation_id' => $reservation->id,
                 'payment_method' => $payment_method,
