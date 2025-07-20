@@ -5,9 +5,9 @@
 This is a Rent-a-Car system built with pure PHP, following PSR-4 autoloading and a custom MVC structure.
 The project reinforces backend fundamentals before transitioning to a Laravel version.
 It includes:
-✅ Google OAuth login & registration
-✅ Email notifications for user registration & reservations
-✅ Multi-step reservation flow with Alpine.js
+- ✅ Google OAuth login & registration
+- ✅ Email notifications for user registration & reservations
+- ✅ Multi-step reservation flow with Alpine.js
 
 🎯 Goals :
 
