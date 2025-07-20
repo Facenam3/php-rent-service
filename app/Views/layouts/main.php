@@ -39,7 +39,7 @@
                     <a href="/reservations" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Reservations</a>
                 </li>
                 <li>
-                    <a href="#" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">About us</a>
+                    <a href="/about-us" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">About us</a>
                 </li>
                 <li>
                     <a href="#" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Contact</a>
@@ -86,16 +86,16 @@
                 </a>
                 <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-200">
                     <li>
-                        <a href="#" class="hover:text-orange-500 me-4 md:me-6">About</a>
+                        <a href="/about-us" class="hover:text-orange-500 me-4 md:me-6">About</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-orange-500 me-4 md:me-6">Privacy Policy</a>
+                        <a href="/privacy-policy" class="hover:text-orange-500 me-4 md:me-6">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-orange-500 me-4 md:me-6">Licensing</a>
+                        <a href="/licensing" class="hover:text-orange-500 me-4 md:me-6">Licensing</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-orange-500">Contact</a>
+                        <a href="/faq" class="hover:text-orange-500">FaQ</a>
                     </li>
                 </ul>
             </div>
