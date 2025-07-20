@@ -39,6 +39,7 @@ It includes:
 
 - Sends a welcome email on registration
 - Sends a reservation confirmation email
+- Stripe card payments (test mode) with success/cancel flows
   
 ✅ Routing & MVC
 
@@ -51,9 +52,11 @@ It includes:
 - Alpine.js for reactive UI
 
 🚀 Upcoming Features
-🔄 Stripe Payment Integration (test mode) for online payments.
+
 🛠 Admin Panel to manage cars, users, reservations, and payments.
+
 📊 Dashboard Analytics for reservation tracking.
+
 🏷 Discount codes & promotions.
 
 💡 Learning Approach
