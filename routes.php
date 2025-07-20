@@ -25,3 +25,8 @@
  $router->add("GET", "/payments/stripe-checkout", "StripeController@checkout");
  $router->add("GET","/payments/success", "StripeController@success");
  $router->add("GET", "/payments/cancel", "StripeController@cancel");
+
+ $router->add("GET", '/about-us' , "CompanyController@about");
+ $router->add("GET", "/privacy-policy", "CompanyController@privacy");
+ $router->add("GET", "/licensing", 'CompanyController@licensing');
+ $router->add("GET", "/faq", "CompanyController@faq");
