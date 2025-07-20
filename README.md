@@ -52,12 +52,9 @@ It includes:
 - Alpine.js for reactive UI
 
 🚀 Upcoming Features
-
-🛠 Admin Panel to manage cars, users, reservations, and payments.
-
-📊 Dashboard Analytics for reservation tracking.
-
-🏷 Discount codes & promotions.
+- 🛠 Admin Panel to manage cars, users, reservations, and payments.
+- 📊 Dashboard Analytics for reservation tracking.
+- 🏷 Discount codes & promotions.
 
 💡 Learning Approach
 This project was developed while following various online learning resources (Udemy, YouTube, GeeksforGeeks, etc.).
