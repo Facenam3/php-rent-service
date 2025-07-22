@@ -157,3 +157,10 @@
 [2025-07-17 22:53:22] Error: ErrorException: Creation of dynamic property App\Models\Payment::$status is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
 [2025-07-17 22:58:24] Error: ErrorException: Undefined array key "success_url" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\StripeController.php on line 51
 [2025-07-20 20:59:34] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/comapny/about-us.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 32
+[2025-07-22 22:48:01] Error: TypeError: Core\Database::fetchAll(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Review.php on line 37 in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 43
+[2025-07-22 22:50:08] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: users.name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-22 22:50:45] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: cars.image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-22 22:50:46] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: cars.image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-22 22:51:11] Error: ErrorException: Undefined property: App\Models\Review::$message in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\home\index.php on line 84
+[2025-07-22 23:02:38] Error: ErrorException: include(partials/footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 80
+[2025-07-22 23:03:24] Error: ErrorException: include(C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts../partials/footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 79
