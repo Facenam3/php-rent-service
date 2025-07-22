@@ -1,12 +1,51 @@
-<div>
-    <div class="hero flex items-end justify-center text-white">
-        <div class="p-6 w-full bg-orange-600/75 flex items-center justify-center">
-            <div class="w-full md:w-3/5 text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl capitalize font-extrabold">Explore your dream car</h1>
-                <p class="text-2xl md:text-lg mt-4">Explore our wide selection of cars at unbeatable prices. Whether it's for business or adventure, we offer the best service, flexible bookings, and hassle-free rentals to get you on the road smoothly.</p>
-            </div>     
-        </div>
+<div 
+  x-data="{
+    images: [
+      'https://images.dealer.com/ddc/vehicles/2025/BMW/M240/Coupe/still/front-left/front-left-640-en_US.jpg',
+      'https://substackcdn.com/image/fetch/f_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F785e7587-5249-4977-95ef-014c2751732a_6000x4000.jpeg',
+      'https://images.unsplash.com/photo-1502877338535-766e1452684a'
+    ],
+    current: 0,
+    interval: null,
+    startRotation() {
+      this.interval = setInterval(() => {
+        this.current = (this.current + 1) % this.images.length;
+      }, 5000);
+    }
+  }"
+  x-init="startRotation()"
+  class="relative w-full h-[80vh] flex items-center justify-center overflow-hidden"
+>
+
+  <template x-for="(img, index) in images" :key="index">
+    <div 
+      class="absolute inset-0 transition-opacity duration-1000"
+      x-show="current === index"
+    >
+      <img 
+        :src="img" 
+        class="w-full h-full object-cover"
+        alt="Hero image"
+      />
+      <div class="absolute inset-0 bg-black/50"></div>
     </div>
+  </template>
+
+  <div class="relative text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-bold">Explore Your Dream Car</h1>
+    <p class="mt-4 text-lg md:text-2xl">Premium rentals for every journey – book in seconds!</p>
+    <a href="/reservations" class="mt-6 inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg shadow-lg text-lg">Book Now</a>
+  </div>
+
+  <div class="absolute bottom-4 flex space-x-2">
+    <template x-for="(img, index) in images" :key="index">
+      <button 
+        class="w-3 h-3 rounded-full"
+        :class="current === index ? 'bg-white' : 'bg-gray-400'"
+        @click="current = index"
+      ></button>
+    </template>
+  </div>
 </div>
 
 <article class="promotion bg-gray-50 p-6 md:p-8 w-full">
@@ -31,7 +70,7 @@
     </div>
 </article>
 
-<div class="bg-gray-200 w-full p-6">
+<div class="pickup-info bg-gray-200 w-full p-6">
     <div class="flex justify-center">
         <div class="flex flex-col lg:flex-row items-center w-full lg:w-3/4 space-y-6 lg:space-y-0 lg:space-x-6">
             <div class="w-full lg:w-1/2 flex justify-center items-center flex-col p-4 text-center lg:text-left">
@@ -71,8 +110,8 @@
         </div>
     </div>
 </div>
-<div class="relative w-full max-w-full mx-auto px-4 py-8">
-        
+<div class="reviews-carousel relative w-full max-w-full mx-auto p-6 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-6 mt-4 text-orange-600">Customer Reviews</h2>
             <div 
                 x-data="{
                 current: 0,
