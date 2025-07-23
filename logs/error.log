@@ -1,0 +1,197 @@
+[2025-05-14 20:57:39] Error: Exception: This should go into the logs in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 7
+[2025-05-14 21:06:32] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-14 21:06:39] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-14 21:06:41] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-14 21:14:21] Error: Exception: This has happend on the web in C:\xampp\htdocs\php-rent\php-rent-service\app\Controller\HomeController.php on line 10
+[2025-05-16 22:21:49] Error: PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 38
+[2025-05-16 22:37:45] Error: ErrorException: Creation of dynamic property App\Models\Car::$id is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-05-16 22:41:58] Error: ErrorException: Creation of dynamic property App\Models\Car::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-05-17 12:21:59] Error: TypeError: PDOStatement::fetch(): Argument #2 ($cursorOrientation) must be of type int, string given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 55
+[2025-05-17 12:24:40] Error: ArgumentCountError: PDOStatement::setFetchMode() expects at least 2 arguments for the fetch mode provided, 1 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-05-17 12:36:33] Error: ArgumentCountError: PDOStatement::setFetchMode() expects at least 2 arguments for the fetch mode provided, 1 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-05-17 12:36:33] Error: ArgumentCountError: PDOStatement::setFetchMode() expects at least 2 arguments for the fetch mode provided, 1 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-05-17 12:38:29] Error: ErrorException: Creation of dynamic property App\Models\Review::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-05-17 12:39:18] Error: ErrorException: Creation of dynamic property App\Models\CarSpecification::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-05-17 12:39:29] Error: ErrorException: Attempt to read property "fuel_type" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 7
+[2025-05-17 12:40:53] Error: ErrorException: Attempt to read property "fuel_type" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 7
+[2025-05-17 12:41:13] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
+[2025-05-17 12:42:46] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
+[2025-05-17 12:42:47] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
+[2025-05-17 12:43:11] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
+[2025-05-17 12:44:14] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type array, App\Models\CarSpecification returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 22
+[2025-05-17 17:37:50] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/ cars/index.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 22
+[2025-05-17 17:38:23] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/ cars/index.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 22
+[2025-05-17 17:41:37] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 13
+[2025-05-17 17:41:42] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 14
+[2025-05-17 17:41:42] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 14
+[2025-05-17 17:45:02] Error: ErrorException: Undefined property: App\Models\Car::$registration_year in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 18
+[2025-05-17 17:46:20] Error: ErrorException: Undefined property: App\Models\Car::$price in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 21
+[2025-05-18 16:44:41] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:44:56] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:45:08] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:46:09] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:50:07] Error: ErrorException: Optional parameter $limit declared before required parameter $page is implicitly treated as a required parameter in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 16:51:09] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Car, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Model.php on line 15
+[2025-05-18 17:37:46] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:38:19] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:38:20] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:39:13] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:39:30] Error: Error: Call to undefined function partial() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 59
+[2025-05-18 17:53:57] Error: TypeError: App\Models\Car::getRecent(): Argument #2 ($page) must be of type ?int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 18 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 17:54:12] Error: TypeError: App\Models\Car::getRecent(): Argument #2 ($page) must be of type ?int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 18 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-18 17:54:13] Error: TypeError: App\Models\Car::getRecent(): Argument #2 ($page) must be of type ?int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 18 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 24
+[2025-05-19 17:57:14] Error: ErrorException: Creation of dynamic property App\Models\User::$id is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-05-19 17:59:19] Error: ErrorException: Creation of dynamic property App\Models\User::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-05-19 17:59:35] Error: ErrorException: Creation of dynamic property App\Models\User::$updated_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-05-19 18:01:57] Error: ErrorException: file_get_contents(https://media.ed.edmunds-media.com/bmw/5-series/2014/oem/2014_bmw_5-series_sedan_535d_fq_oem_3_1600x1067.jpg): Failed to open stream: HTTP request failed! in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 26
+[2025-05-19 18:05:34] Error: ErrorException: file_get_contents(https://media.ed.edmunds-media.com/bmw/5-series/2014/oem/2014_bmw_5-series_sedan_535d_fq_oem_3_1600x1067.jpg): Failed to open stream: HTTP request failed! in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 26
+[2025-05-19 18:14:07] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 37
+[2025-05-19 18:14:19] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 37
+[2025-05-19 18:14:20] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 37
+[2025-05-19 18:18:07] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 37
+[2025-05-19 18:18:45] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 37
+[2025-05-19 18:21:14] Error: ErrorException: is_file(): Passing null to parameter #1 ($filename) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 37
+[2025-05-19 18:25:57] Error: ErrorException: Undefined variable $imagePath in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 36
+[2025-05-19 18:26:22] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 36
+[2025-06-21 10:07:31] Error: ErrorException: require_once(C:\xampp\htdocs\php-rent\php-rent-service\public/../routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\public\index.php on line 9
+[2025-06-21 10:08:09] Error: ErrorException: require_once(C:\xampp\htdocs\php-rent\php-rent-service\public/../routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\public\index.php on line 9
+[2025-06-21 10:11:50] Error: Error: Class "App\Controllers\CarsController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 66
+[2025-06-21 11:45:08] Error: ErrorException: session_regenerate_id(): Session ID cannot be regenerated when there is no active session in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 12
+[2025-06-23 23:05:23] Error: ErrorException: Undefined variable $e in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 16
+[2025-06-23 23:06:27] Error: ErrorException: Undefined variable $e in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 16
+[2025-06-23 23:12:20] Error: ErrorException: Undefined variable $schemaFile in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 10
+[2025-06-23 23:13:11] Error: ErrorException: Undefined variable $schemaFILE in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 12
+[2025-06-23 23:13:28] Error: ErrorException: Undefined variable $schemaFILE in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 14
+[2025-06-23 23:14:52] Error: ErrorException: Undefined variable $schemaFILE in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 13
+[2025-06-23 23:15:12] Error: Error: Call to undefined method Core\Database::beginTransaction() in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 17
+[2025-06-23 23:17:39] Error: ErrorException: Undefined variable $schemaFile in C:\xampp\htdocs\php-rent\php-rent-service\bin\schema_load.php on line 10
+[2025-06-23 23:43:08] Error: PDOException: SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:44:43] Error: PDOException: SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:46:01] Error: PDOException: SQLSTATE[HY000]: General error: 1 near ")": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:47:28] Error: PDOException: SQLSTATE[HY000]: General error: 1 duplicate column name: oauth_provider in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:52:43] Error: PDOException: SQLSTATE[HY000]: General error: 1 table users has no column named password in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:53:33] Error: PDOException: SQLSTATE[HY000]: General error: 1 duplicate column name: oauth_provider in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:54:12] Error: PDOException: SQLSTATE[HY000]: General error: 1 table users has no column named password in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:55:00] Error: PDOException: SQLSTATE[HY000]: General error: 1 table users has no column named role in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-06-23 23:55:43] Error: ErrorException: Creation of dynamic property App\Models\User::$oauth_provider is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-23 23:57:06] Error: ErrorException: Creation of dynamic property App\Models\User::$oauth_provider is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-23 23:57:30] Error: ErrorException: Creation of dynamic property App\Models\User::$oauth_provider is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-23 23:58:26] Error: ErrorException: Creation of dynamic property App\Models\User::$role is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-24 00:05:46] Error: ParseError: syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 38
+[2025-06-24 21:12:48] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:12:48] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 110
+[2025-06-24 21:13:23] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:13:23] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 109
+[2025-06-24 21:13:23] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:13:23] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 109
+[2025-06-24 21:13:24] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:13:24] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 109
+[2025-06-24 21:14:07] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:14:54] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:14:55] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:14:57] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:14:57] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:14:58] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:15:20] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:15:21] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:15:21] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:15:21] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:15:24] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 21
+[2025-06-24 21:17:31] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 24
+[2025-06-24 21:17:32] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 24
+[2025-06-24 21:17:32] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\Auth.php on line 24
+[2025-06-25 23:58:55] Error: TypeError: Cannot assign string to property App\Models\Car::$price_per_day of type int in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-06-26 17:04:44] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 21
+[2025-06-26 17:04:44] Error: ErrorException: Undefined variable $user in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 57
+[2025-06-26 17:05:12] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 21
+[2025-06-26 17:05:12] Error: ErrorException: Undefined variable $user in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 57
+[2025-06-26 17:05:13] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 21
+[2025-06-26 17:05:13] Error: ErrorException: Undefined variable $user in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 57
+[2025-06-26 17:05:15] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 21
+[2025-06-26 17:05:15] Error: ErrorException: Undefined variable $user in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 57
+[2025-06-26 17:06:17] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 21
+[2025-06-26 17:06:17] Error: ErrorException: Undefined variable $user in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 57
+[2025-06-26 17:07:13] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 21
+[2025-06-26 17:07:44] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 19
+[2025-06-26 17:07:44] Error: ParseError: syntax error, unexpected token "<<", expecting ";" in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 19
+[2025-06-26 17:12:25] Error: Error: Cannot access private constant App\Services\CSRF::CSRF_TOKEN_FIELD_NAME in C:\xampp\htdocs\php-rent\php-rent-service\helpers.php on line 19
+[2025-06-28 13:02:17] Error: RuntimeException: Error: Layout file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/layout/main.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 50
+[2025-06-28 13:04:14] Error: RuntimeException: Error: Layout file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/layout/main.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 50
+[2025-06-29 22:56:01] Error: ArgumentCountError: Too few arguments to function App\Controllers\AuthController::storeUser(), 0 passed in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 72 and exactly 4 expected in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\AuthController.php on line 48
+[2025-06-29 22:57:11] Error: ArgumentCountError: Too few arguments to function App\Controllers\AuthController::storeUser(), 0 passed in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 72 and exactly 4 expected in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\AuthController.php on line 48
+[2025-06-29 23:49:19] Error: Error: Class "core\Validator" not found in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\AuthController.php on line 60
+[2025-06-29 23:51:23] Error: Error: Class "core\Validator" not found in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\AuthController.php on line 60
+[2025-06-30 16:26:03] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\auth\register.php on line 61
+[2025-06-30 16:26:29] Error: ErrorException: Undefined variable $errors in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\auth\register.php on line 3
+[2025-06-30 16:28:00] Error: ParseError: syntax error, unexpected token ":", expecting "(" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\auth\register.php on line 5
+[2025-06-30 16:28:38] Error: ErrorException: Undefined variable $errors in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\auth\register.php on line 3
+[2025-06-30 16:44:47] Error: PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 UNIQUE constraint failed: users.email in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 38
+[2025-07-02 22:52:45] Error: Exception: No google is bound in the container in C:\xampp\htdocs\php-rent\php-rent-service\core\App.php on line 16
+[2025-07-06 19:32:38] Error: ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 892
+[2025-07-06 19:34:52] Error: ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 892
+[2025-07-15 21:32:01] Error: PDOException: SQLSTATE[HY000]: General error: 1 table cars has no column named available in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-15 21:34:24] Error: PDOException: SQLSTATE[HY000]: General error: 1 table car_specifications has no column named max_passengers in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-15 21:35:54] Error: ErrorException: Creation of dynamic property App\Models\CarSpecification::$max_passengers is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-15 21:36:34] Error: ErrorException: Creation of dynamic property App\Models\Location::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-15 21:37:54] Error: Error: Typed property App\Models\Car::$registration_no must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:38:30] Error: Error: Typed property App\Models\Car::$registration_no must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:38:48] Error: Error: Typed property App\Models\Car::$registration_no must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:40:09] Error: ErrorException: Undefined variable $fuel_consumption in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:40:22] Error: ErrorException: Undefined property: App\Models\Car::$fuel_consumption in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:41:28] Error: ErrorException: Undefined property: App\Models\Car::$car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:41:28] Error: ErrorException: Undefined property: App\Models\Car::$car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\index.php on line 45
+[2025-07-15 21:48:36] Error: ErrorException: Creation of dynamic property App\Models\Car::$fuel_type is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-07-15 21:50:54] Error: ErrorException: Creation of dynamic property App\Models\Car::$doors is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-07-15 23:26:52] Error: ErrorException: Undefined variable $cars in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 47
+[2025-07-16 21:45:25] Error: PDOException: SQLSTATE[HY000]: General error: 1 unknown column "reservation_id" in foreign key definition in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-16 21:48:19] Error: PDOException: SQLSTATE[HY000]: General error: 1 unknown column "reservation_id" in foreign key definition in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-16 21:55:38] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 75
+[2025-07-16 21:55:46] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 75
+[2025-07-16 21:56:10] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 76
+[2025-07-16 21:58:14] Error: ErrorException: ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\create.php on line 76
+[2025-07-17 00:10:18] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$car_id is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 00:11:37] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$status is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 00:13:10] Error: ErrorException: Creation of dynamic property App\Models\Reservation::$created_at is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 00:28:58] Error: Error: Call to undefined method App\Models\Reservation::car() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\thank-you.php on line 8
+[2025-07-17 00:32:03] Error: Error: Call to undefined method App\Models\Reservation::car() in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\reservation\thank-you.php on line 8
+[2025-07-17 22:53:22] Error: ErrorException: Creation of dynamic property App\Models\Payment::$status is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-07-17 22:58:24] Error: ErrorException: Undefined array key "success_url" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\StripeController.php on line 51
+[2025-07-20 20:59:34] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/comapny/about-us.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 32
+[2025-07-22 22:48:01] Error: TypeError: Core\Database::fetchAll(): Argument #2 ($params) must be of type array, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Review.php on line 37 in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 43
+[2025-07-22 22:50:08] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: users.name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-22 22:50:45] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: cars.image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-22 22:50:46] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: cars.image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-22 22:51:11] Error: ErrorException: Undefined property: App\Models\Review::$message in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\home\index.php on line 84
+[2025-07-22 23:02:38] Error: ErrorException: include(partials/footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 80
+[2025-07-22 23:03:24] Error: ErrorException: include(C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts../partials/footer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\layouts\main.php on line 79
+[2025-07-23 21:34:44] Error: ErrorException: Undefined property: App\Models\CarSpecification::$seats in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 11
+[2025-07-23 21:50:01] Error: ErrorException: Undefined property: App\Models\Review::$message in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 11
+[2025-07-23 21:50:24] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 12
+[2025-07-23 21:58:10] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 39
+[2025-07-23 21:58:51] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 43
+[2025-07-23 22:02:59] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:03:40] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:03:41] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:05:07] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:05:42] Error: Error: Cannot use object of type App\Models\Review as array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 70
+[2025-07-23 22:05:52] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:06:00] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:06:01] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:06:06] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:07:33] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:07:33] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:07:40] Error: Error: Typed property App\Models\Car::$max_passengers must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 44
+[2025-07-23 22:11:54] Error: Error: Cannot use object of type App\Models\Review as array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 70
+[2025-07-23 22:12:47] Error: Error: Cannot use object of type App\Models\Review as array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 70
+[2025-07-23 22:12:48] Error: Error: Cannot use object of type App\Models\Review as array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 70
+[2025-07-23 22:13:51] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: users.name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-07-23 22:14:07] Error: ErrorException: Undefined variable $isLoggedIn in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 91
+[2025-07-23 22:14:56] Error: Error: Class "Auth" not found in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\cars\show.php on line 91
+[2025-07-23 22:32:24] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 72
+[2025-07-23 22:35:54] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
+[2025-07-23 22:36:19] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
+[2025-07-23 22:37:59] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
+[2025-07-23 22:41:15] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
+[2025-07-23 22:47:59] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
+[2025-07-23 22:49:07] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
+[2025-07-23 22:49:34] Error: TypeError: App\Models\Car::findById(): Argument #1 ($id) must be of type int, string given, called in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\CarController.php on line 35 in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\Car.php on line 135
