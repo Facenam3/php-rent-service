@@ -32,12 +32,13 @@ class CarController{
 
    
     public function show($id) {
-        $car = Car::find($id);
+        $id = (int)$id;
+        $car = Car::findById($id);
         if(!$car) {
             Router::notFound();
         }
 
-        $reviews = Review::forCars($id);
+        $reviews = Review::getByCarId($id);
         $car_specifications = CarSpecification::forCar($id);
 
         return View::render(

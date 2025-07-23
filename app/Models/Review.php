@@ -25,6 +25,18 @@ class Review extends Model {
         );
     }
 
+    public static function getByCarId($carId) {
+        $db = App::get('database');
+        $sql = "
+            SELECT reviews.*, users.first_name AS user_name 
+            FROM reviews
+            JOIN users ON reviews.user_id = users.id
+            WHERE reviews.car_id = ?
+            ORDER BY reviews.created_at DESC
+        ";
+        return $db->fetchAll($sql, [$carId]);
+    }
+
     public static function getReviews() {
         $db = App::get('database');
         $sql = "
