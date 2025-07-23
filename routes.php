@@ -30,3 +30,5 @@
  $router->add("GET", "/privacy-policy", "CompanyController@privacy");
  $router->add("GET", "/licensing", 'CompanyController@licensing');
  $router->add("GET", "/faq", "CompanyController@faq");
+
+ $router->add("POST", "/reviews/store", "ReviewController@store");

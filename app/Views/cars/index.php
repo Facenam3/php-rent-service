@@ -83,10 +83,10 @@
                             </div>
 
                             <div class="flex justify-between items-center mt-4">
-                                <a href="#" class="px-4 py-2 text-sm font-semibold text-white bg-orange-600 rounded-lg hover:bg-orange-700 transition">
+                                <a href="/cars/<?= $car->id  ?>" class="px-4 py-2 text-sm font-semibold text-white bg-orange-600 rounded-lg hover:bg-orange-700 transition">
                                     <i class="fas fa-info-circle mr-1"></i> View Details
                                 </a>
-                                <a href="#" class="text-orange-600 dark:text-orange-400 text-sm hover:underline">
+                                <a href="/register" class="text-orange-600 dark:text-orange-400 text-sm hover:underline">
                                     Book Now →
                                 </a>
                             </div>

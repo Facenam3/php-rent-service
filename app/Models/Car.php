@@ -21,12 +21,12 @@ class Car extends Model {
     public string $created_at;
     public string $car_specification;
 
-    public ?string $fuel_type = null;
-    public ?float $fuel_consumption = null;
-    public ?string $max_passengers = null;
-    public ?string $doors = null;
-    public ?string $transmission = null;
-    public ?string $air_condition = null;
+    public string $fuel_type;
+    public float $fuel_consumption;
+    public int $max_passengers;
+    public string $doors;
+    public string $transmission;
+    public string $air_condition;
 
     public static function store(array $data) : static {
          $imageContents = false;
@@ -135,7 +135,21 @@ class Car extends Model {
     public static function findById(int $id) : ?Car {
         $db = App::get('database');
 
-        $result = $db->fetch("SELECT * FROM cars WHERE id = ?", [$id], static::class);
+        $sql = "
+          SELECT 
+            cars.*, 
+            cs.fuel_type,
+            cs.fuel_consumption,
+            cs.doors,
+            cs.max_passengers,
+            cs.transmission,
+            cs.air_condition
+        FROM cars
+        LEFT JOIN car_specifications cs ON cs.car_id = cars.id
+        WHERE cars.id = ?
+        ";
+
+        $result = $db->fetch($sql, [$id], static::class);
         return $result ? $result : null;
     }
 
