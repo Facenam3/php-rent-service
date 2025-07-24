@@ -21,12 +21,12 @@ class Car extends Model {
     public string $created_at;
     public string $car_specification;
 
-    public string $fuel_type;
-    public float $fuel_consumption;
-    public int $max_passengers;
-    public string $doors;
-    public string $transmission;
-    public string $air_condition;
+    public ?string $fuel_type;
+    public ?float $fuel_consumption;
+    public ?int $max_passengers;
+    public ?string $doors;
+    public ?string $transmission;
+    public ?string $air_condition;
 
     public static function store(array $data) : static {
          $imageContents = false;

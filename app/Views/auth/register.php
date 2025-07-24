@@ -1,5 +1,5 @@
 <div class="flex justify-center items-center min-h-screen bg-gray-200">
-    <div class="w-full max-w-sm p-6 rounded-lg shadow-lg bg-white dark:bg-gray-800 border border-orange-500">     
+    <div class="w-full max-w-sm p-10 rounded-lg shadow-lg bg-white dark:bg-gray-800 border border-orange-500">     
         <h2 class="text-4xl font-bold mb-6 text-orange-500 text-center">Register</h2>
             <form class="space-y-5" method="POST" action="/register" id="register">
                 <!-- CSRF -->

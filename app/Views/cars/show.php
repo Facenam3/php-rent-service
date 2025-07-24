@@ -1,8 +1,8 @@
-<div class="bg-gray-50 p-6">
+<div class="bg-gray-50 p-10">
 
     <div class="flex flex-col lg:flex-row max-w-8xl mx-auto bg-white shadow rounded-lg overflow-hidden">
     
-        <div class="w-full lg:w-1/2 p-5">
+        <div class="w-full lg:w-1/2 p-6">
             <img 
                 src="../<?= htmlspecialchars($car->image_path) ?>" 
                 alt="<?= htmlspecialchars($car->brand . ' ' . $car->model) ?>" 
@@ -52,7 +52,7 @@
             </div>
 
             <div class="mt-6">
-                <a href="/reserve?car_id=<?= $car->id ?>" 
+                <a href="/reservations" 
                 class="inline-block px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600">
                 🚗 Reserve Now
                 </a>
