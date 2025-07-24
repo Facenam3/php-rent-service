@@ -2,8 +2,8 @@
   <script src="/js/reservation.js"></script>
 <?php endif; ?>
 
-<div x-data="reservationWizard()" class="m-5">
-  <form method="POST" action="/reservations/store" class="max-w-6xl mx-auto p-6 bg-white border-gray-200 dark:bg-gray-800 text-gray-200 shadow rounded space-y-6">
+<div x-data="reservationWizard()" class="p-10">
+  <form method="POST" action="/reservations/store" class="max-w-6xl mx-auto p-10 bg-white border-gray-200 dark:bg-gray-800 text-gray-200 shadow rounded space-y-6">
     <?= csrf_token() ?>
     <!-- Progress indicator -->
     <div class="flex justify-between text-sm font-semibold mb-4">

@@ -22,7 +22,7 @@ class ReviewController {
             ]);
 
             if($review) {
-                Router::redirect('/cars/show?id=' . $carID);
+                Router::redirect('/cars/show/?id=' . $carID);
             }
         }
     }

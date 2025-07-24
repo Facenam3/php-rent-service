@@ -32,3 +32,6 @@
  $router->add("GET", "/faq", "CompanyController@faq");
 
  $router->add("POST", "/reviews/store", "ReviewController@store");
+
+ $router->add("GET", "/contact" , "ContactController@contact");
+ $router->add("POST", "/contact/store", "ContactController@store");

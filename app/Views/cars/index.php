@@ -1,7 +1,6 @@
 <div >
-
     <div class="flex items-center justify-center  bg-gray-300">
-        <div class="p-3">
+        <div class="p-10">
             <h1 class="text-4xl text-center m-6 capitalize font-extrabold ">Our Vehicles</h1>
             <div class="w-full mb-2">
                     <form class="max-w-full mx-auto" action="" method="GET">   

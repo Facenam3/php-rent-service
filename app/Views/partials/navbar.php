@@ -31,7 +31,7 @@
                     <a href="/about-us" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">About us</a>
                 </li>
                 <li>
-                    <a href="#" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Contact</a>
+                    <a href="/contact" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Contact</a>
                 </li>
 
                 <li class="md:hidden mt-2">
