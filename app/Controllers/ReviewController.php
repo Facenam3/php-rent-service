@@ -8,6 +8,7 @@ use Core\Router;
 class ReviewController {
     public function store() {
         if($_SERVER['REQUEST_METHOD'] === "POST") {
+
             $user_id = $_POST['user_id'];
             $car_id = $_POST['car_id'];
             $rating = $_POST['rating'];
@@ -22,7 +23,7 @@ class ReviewController {
             ]);
 
             if($review) {
-                Router::redirect('/cars/show/?id=' . $carID);
+                Router::redirect('/cars/' . $carID);
             }
         }
     }

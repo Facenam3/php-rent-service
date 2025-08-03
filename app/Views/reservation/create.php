@@ -5,7 +5,6 @@
 <div x-data="reservationWizard()" class="p-10">
   <form method="POST" action="/reservations/store" class="max-w-6xl mx-auto p-10 bg-white border-gray-200 dark:bg-gray-800 text-gray-200 shadow rounded space-y-6">
     <?= csrf_token() ?>
-    <!-- Progress indicator -->
     <div class="flex justify-between text-sm font-semibold mb-4">
       <div :class="step >= 1 ? 'text-orange-600' : 'text-gray-500'">Step 1: Details</div>
       <div :class="step >= 2 ? 'text-orange-600' : 'text-gray-500'">Step 2: Car</div>
@@ -14,7 +13,6 @@
       <div :class="step >= 5 ? 'text-orange-600' : 'text-gray-500'">Step 5: Confirm</div>
     </div>
 
-    <!-- STEP 1: Pickup & Dropoff -->
     <div x-show="step === 1" x-transition>
       <h2 class="text-xl font-bold mb-4">Step 1: Reservation Details</h2>
 
@@ -79,7 +77,6 @@
       </button>
     </div>
 
-    <!-- STEP 2: Car Selection -->
     <div x-show="step === 2" x-transition>
       <h2 class="text-xl font-bold mb-4">Step 2: Choose Your Car</h2>
 
@@ -110,7 +107,6 @@
       </div>
     </div>
 
-    <!-- STEP 3: Your Info -->
     <div x-show="step === 3" x-transition>
       <h2 class="text-xl font-bold text-white mb-4">Step 3: Your Information</h2>
       <?php if (isset($_SESSION['user_id'])): ?>

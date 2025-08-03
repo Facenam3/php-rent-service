@@ -5,7 +5,6 @@ namespace App\Controllers;
 use Core\View;
 use App\Services\Auth;
 use Core\Router;
-use App\Services\CSRF;
 use Core\Validator;
 use App\Models\User;
 use Core\App;
@@ -27,9 +26,7 @@ class AuthController {
 
     public function store(): void {
          if($_SERVER['REQUEST_METHOD'] === "POST") {
-            if(!CSRF::verify()) {
-                Router::pageExpired();
-            }
+           
             $email = $_POST['email'];
             $password = $_POST['password'];
             $remember = isset($_POST['remember']) ? (bool)$_POST['remember'] : false;
@@ -52,21 +49,11 @@ class AuthController {
                 Router::redirect('/login');
             }           
        }
-    //    return View::render(
-    //         template: "auth/create",
-    //         layout: 'layouts/main',
-    //         data: [
-    //             "errors" => $errors,
-    //             'validationErrors' => $validationErrors
-    //         ]
-    //     );
     }
 
     public function storeUser() {
         if($_SERVER["REQUEST_METHOD"] === "POST") {
-            if(!CSRF::verify()) {
-                Router::pageExpired();
-            }
+
             $mailer = App::get('mailer');
             $first_name = trim(ucfirst($_POST['first_name']));
             $last_name = trim(ucfirst($_POST['last_name']));

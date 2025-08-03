@@ -51,20 +51,4 @@ class CarController{
                 ]
         );
     }
-
-    // public function apiIndex() {
-    //     $search = $_GET['search'] ?? "";
-    //     $limit = $_GET['limit'] ?? 6;
-    //     $page = $_GET['page'] ?? 1;  
-
-    //     $cars = Car::getRecent($limit, $page, $search);
-    //     $total = Car::count($search);
-    //     header('Content-Type: application/json');
-    //     echo json_encode([
-    //             'cars' => $cars,
-    //             'currentPage' => $page,
-    //             'totalPages' => ceil($total / $limit)
-    //     ]);
-    //     exit;
-    //  }
 }

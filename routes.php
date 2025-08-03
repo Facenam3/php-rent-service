@@ -3,6 +3,13 @@
  * @var Core\Router $router
  */
 
+use App\Middlewares\Auth;
+use App\Middlewares\CSRF;
+use App\Middlewares\View;
+
+$router->addGlobalMiddleware(View::class);
+$router->addGlobalMiddleware(CSRF::class);
+$router->addRouteMiddleware('auth', Auth::class);
 
  $router->add('GET', '/', "HomeController@index");
  $router->add("GET", '/cars', 'CarController@index');
@@ -31,7 +38,7 @@
  $router->add("GET", "/licensing", 'CompanyController@licensing');
  $router->add("GET", "/faq", "CompanyController@faq");
 
- $router->add("POST", "/reviews/store", "ReviewController@store");
+ $router->add("POST", "/reviews/store", "ReviewController@store",['auth']);
 
  $router->add("GET", "/contact" , "ContactController@contact");
  $router->add("POST", "/contact/store", "ContactController@store");
