@@ -9,7 +9,6 @@ use App\Models\Location;
 use App\Models\Reservation;
 use App\Models\Payment;
 use App\Models\User;
-use App\Services\CSRF;
 use Core\Router;
 
 class ReservationController {
@@ -27,9 +26,7 @@ class ReservationController {
     }
 
     public function store() {
-        if(!CSRF::verify()) {
-                Router::pageExpired();
-        }
+
         if($_SERVER['REQUEST_METHOD'] === "POST") {
             $mailer = App::get('mailer');
             $user_id = $_POST['user_id'] ?? null;

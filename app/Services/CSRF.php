@@ -32,9 +32,9 @@ class CSRF {
             return true;
         }
 
-        $csrfToken = $token ?? $_POST[static::CSRF_TOKEN_FIELD_NAME] ?? $_SERVER['HTTP_X_CSRF_TOKEN'] ?? null;
+        $csrfToken = $token ?? $_POST[static::CSRF_TOKEN_FIELD_NAME] ?? $_SERVER['HTTP_X_CSRF_TOKEN'] ?? '';
 
-        if($csrfToken && !static::isTokenExpired() && hash_equals($_SESSION['csrf_token']['token'], $csrfToken)) {
+        if(!empty($csrfToken) && !static::isTokenExpired() && hash_equals($_SESSION['csrf_token']['token'] ?? '', $csrfToken)) {
             static::generateCsrfToken();
             return true;
         }
@@ -43,8 +43,10 @@ class CSRF {
     }
 
     private static function isTokenExpired():bool {
-        $expires = $_SESSION['csrf_token']['expires'];
+        if (!isset($_SESSION['csrf_token']) || !isset($_SESSION['csrf_token']['expires'])) {
+        return true;
+        }
 
-        return !isset($expires) || time() > $expires;
+        return time() > $_SESSION['csrf_token']['expires'];
     }
 }

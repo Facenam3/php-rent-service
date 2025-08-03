@@ -38,6 +38,7 @@ class Auth {
 
     public static function logout() : void {
         RememberMe::clearToken();
+        $_SESSION = [];        
         session_destroy();
         static::$user = null;
     }
