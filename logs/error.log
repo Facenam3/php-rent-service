@@ -509,3 +509,17 @@
 [2025-08-03 18:42:56] Error: TypeError: Core\Router::dispatch(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 66
 [2025-08-03 19:04:19] Error: ErrorException: Undefined array key "csrf_token" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\CSRF.php on line 46
 [2025-08-03 19:04:32] Error: ErrorException: Undefined array key "csrf_token" in C:\xampp\htdocs\php-rent\php-rent-service\app\Services\CSRF.php on line 46
+[2025-08-03 23:15:46] Error: ErrorException: Undefined array key "admin" in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 56
+[2025-08-03 23:16:08] Error: ErrorException: Undefined array key "admin" in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 56
+[2025-08-03 23:16:08] Error: ErrorException: Undefined array key "admin" in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 56
+[2025-08-03 23:22:47] Error: Error: Class "App\Controllers\Admin/AdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:24:02] Error: Error: Class "App\Controllers\Admin/AdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:24:27] Error: Error: Class "App\Controllers\Admin\AdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:24:33] Error: Error: Class "App\Controllers\AdminAdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:24:34] Error: Error: Class "App\Controllers\AdminAdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:24:38] Error: Error: Class "App\Controllers\Admin\AdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:26:18] Error: Error: Class "App\Controllers\Admin\AdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-03 23:26:27] Error: Error: Class "App\Controllers\Admin\AdminController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-04 17:45:09] Error: Error: Class "App\Controllers\LocationController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-04 17:45:23] Error: Error: Class "App\Controllers\LocationsController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
+[2025-08-04 17:45:24] Error: Error: Class "App\Controllers\LocationsController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 114
