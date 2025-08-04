@@ -37,6 +37,10 @@ class AuthController {
 
             if(empty($errors)) {
                 if(Auth::attempt($email, $password, $remember)) {
+                    $user = User::findByEmail($email);
+                    if($user->role === "admin") {
+                        Router::redirect('/admin/dashboard');
+                    }
                     Router::redirect('/');
                 } else {
                     $_SESSION['error'] = "Invalid email or password.";
