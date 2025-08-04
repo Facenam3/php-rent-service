@@ -34,8 +34,12 @@
                     <a href="/contact" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Contact</a>
                 </li>
                 <?php if(isset($user)) :?>
-                <li class="md:hidden mt-2">                   
-                    <a href="/admin/dashboard" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></a>
+                <li class="md:hidden mt-2"> 
+                    <?php if(check('dashboard')) : ?>             
+                        <a href="/admin/dashboard" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></a>
+                    <?php else :?>
+                        <p class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></p>
+                    <?php endif ; ?>
                     <form action="/logout" method="POST">
                         <?= csrf_token() ?>
                         <button class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">Logout</button>
@@ -55,7 +59,11 @@
         </div>
         <?php if(isset($user))  :?>
             <div class="hidden md:flex items-center md:order-2 space-x-4">
-                <a href="/admin/dashboard" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></a>
+               <?php if(check('dashboard')) : ?>             
+                        <a href="/admin/dashboard" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></a>
+                    <?php else :?>
+                        <p class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></p>
+                    <?php endif ; ?>
                 <form action="/logout" method="POST">
                      <?= csrf_token() ?>
                     <button class="text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md">Logout</button>
