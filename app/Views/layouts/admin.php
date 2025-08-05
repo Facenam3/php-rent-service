@@ -11,6 +11,9 @@
     <body>
         <?php include __DIR__ . "/../partials/navbar.php" ; ?>
             <div class="min-h-screen">
+                <button id="sidebar-toggle" class="lg:hidden p-3 m-3 text-white bg-orange-600 rounded-md">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <div class="flex">
                     <?php include __DIR__ . "/../partials/sidebar.php" ;?>
                     <main class="flex-1 min-h-screen">

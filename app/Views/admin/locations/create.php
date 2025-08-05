@@ -1,5 +1,5 @@
 <div class="py-12 px-12">
-    <div class="w-full bg-white dark:bg-gray-800 rounded-md border-2 shadow-md text-black p-6">
+    <div class="w-full bg-white dark:bg-gray-800 rounded-md border-2 shadow-md text-black p-6 mt-2">
             <h1 class="p-4 text-xl text-orange-500 font-medium ">Create Location</h1>
             <form action="/admin/locations/create" method="POST" class="w-full mx-auto" id="location-form">
                     <?= csrf_token() ?>

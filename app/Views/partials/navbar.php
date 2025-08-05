@@ -6,7 +6,7 @@
             <button 
                 id="navbar-toggle" 
                 type="button" 
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
                 aria-controls="navbar-user" 
                 aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -16,7 +16,7 @@
             </button>
             
             
-       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+       <div class="items-center justify-between hidden w-full md:hidden lg:flex md:w-auto md:order-1" id="navbar-user">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
                 <li>
                     <a href="/" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Home</a>
@@ -58,7 +58,7 @@
             </ul>
         </div>
         <?php if(isset($user))  :?>
-            <div class="hidden md:flex items-center md:order-2 space-x-4">
+            <div class="hidden md:hidden lg:flex items-center md:order-2 space-x-4">
                <?php if(check('dashboard')) : ?>             
                         <a href="/admin/dashboard" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white"><?= ucfirst($user->email)  ?></a>
                     <?php else :?>

@@ -1,5 +1,6 @@
-<aside class="bg-white border-gray-200 dark:bg-gray-800 w-64 p-8 mt-6 mb-2 rounded-lg">
-    <a href="" class="text-orange-600 text-2xl mx-3">Admin Dashboard</a>
+<aside id="admin-sidebar" class="bg-white border-gray-200 dark:bg-gray-800 w-full px-8 py-4 rounded-lg
+    hidden absolute top-[60px] left-0 z-50 lg:relative lg:w-64 lg:block">
+    <a href="/admin/dashboard" class="text-orange-600 text-2xl mx-3">Admin Dashboard</a>
     <ul class="mt-6">
         <li class="mb-2">
             <a href="#" id="btn"
