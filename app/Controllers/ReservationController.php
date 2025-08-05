@@ -69,7 +69,7 @@ class ReservationController {
 
             Car::reserved($car_id);
 
-            $payment = Payment::create([
+            Payment::create([
                 'reservation_id' => $reservation->id,
                 'payment_method' => $payment_method,
                 'amount' => $total_price,
