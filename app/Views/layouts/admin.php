@@ -20,6 +20,8 @@
         <?php include __DIR__ . "/../partials/footer.php" ;?>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/admin.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/reservation.js"></script>
     </body>
