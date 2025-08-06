@@ -57,6 +57,7 @@ CREATE TABLE reviews (
     user_id INTEGER NOT NULL,
     rating INTEGER CHECK(rating >= 1 AND rating <= 5),
     comment TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT "pending",
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (car_id) REFERENCES cars(id) ON DELETE CASCADE,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE

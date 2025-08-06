@@ -72,6 +72,9 @@
                     </td>
                   <td class="px-4 py-2">
                     <div class="flex flex-wrap gap-2 ">
+                       <a href="#" class="text-green-600 whitespace-nowrap px-2" data-id="<?= $review->id ?>" id="review-show">
+                        <i class="fa-solid fa-pen-to-square"></i> Show
+                      </a>
                       <a href="#" class="text-blue-600 whitespace-nowrap px-2" data-id="<?= $review->id ?>" id="review-edit">
                         <i class="fa-solid fa-pen-to-square"></i> Edit
                       </a>
@@ -97,6 +100,9 @@
                 <div class="flex justify-between items-center mb-2">
                 <div class="font-semibold text-lg text-orange-600">Review #<?= $review->id ?></div>
                 <div class="flex gap-3">
+                    <a href="#" class="text-green-600 whitespace-nowrap px-2" data-id="<?= $review->id ?>" id="review-show">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
                     <a href="#" class="text-blue-600" data-id="<?= $review->id ?>" id="review-edit">
                     <i class="fa-solid fa-pen-to-square"></i>
                     </a>
