@@ -47,9 +47,18 @@ $router->addRouteMiddleware('auth', Auth::class);
 ///====================== ADMIN Panel Routes ===========================================
 $router->add("GET", "/admin/dashboard", "Admin\AdminController@index",['auth']);
 
+//============================ LOCATIONS =============================================
 $router->add("GET", "/admin/locations", "Admin\LocationsController@index", ['auth']);
 $router->add("GET", "/admin/locations/create", "Admin\LocationsController@create", ['auth']);
 $router->add("POST", "/admin/locations/create", "Admin\LocationsController@store", ['auth']);
 $router->add("GET", "/admin/locations/{id}/edit", "Admin\LocationsController@edit", ['auth']);
 $router->add("POST", "/admin/locations/{id}/update", "Admin\LocationsController@update", ['auth']);
 $router->add("POST", "/admin/locations/{id}/delete", "Admin\LocationsController@delete", ['auth']);
+
+//============================= REVIEWS ==================================
+$router->add("GET", "/admin/reviews", "Admin\ReviewsController@index", ['auth']);
+$router->add("GET", "/admin/reviews/create", "Admin\ReviewsController@create", ['auth']);
+$router->add("POST", "/admin/reviews/create", "Admin\ReviewsController@store", ['auth']);
+$router->add("GET", "/admin/reviews/{id}/edit", "Admin\ReviewsController@edit", ['auth']);
+$router->add("POST", "/admin/reviews/{id}/update", "Admin\ReviewsController@update", ['auth']);
+$router->add("POST", "/admin/reviews/{id}/delete", "Admin\ReviewsController@delete", ['auth']);
