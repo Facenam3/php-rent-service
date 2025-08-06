@@ -19,6 +19,13 @@ $(document).ready(function(){
        });
     });
 
+    $(document).on('click', "#review-show", function(e) {
+        e.preventDefault();
+
+        const reviewId = $(this).data('id');
+        window.location.href = "/admin/reviews/" + reviewId + "/show";
+    });
+
     $(document).on('click', "#review-edit", function(e) {
         e.preventDefault();
 

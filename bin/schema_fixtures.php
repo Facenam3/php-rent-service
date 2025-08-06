@@ -260,19 +260,22 @@ $reviews = [
         'car_id'  => "0",
         'user_id' => "1",
         'rating' => 3,
-        'comment' => "The best car i have ever drived."
+        'comment' => "The best car i have ever drived.",
+        'status' => "approved"
     ],
     [
         'car_id'  => "1",
         'user_id' => "2",
         'rating' => '5',
-        'comment' => "The best services and their cars are always clean."
+        'comment' => "The best services and their cars are always clean.",
+        'status' => "approved"
     ],
    [
         'car_id'  => "2",
         'user_id' => "2",
         'rating' => "3",
-        'comment' => "Best service in this town."
+        'comment' => "Best service in this town.",
+        'status' => "approved"
     ],
 ];
 

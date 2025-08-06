@@ -59,6 +59,8 @@ $router->add("POST", "/admin/locations/{id}/delete", "Admin\LocationsController@
 $router->add("GET", "/admin/reviews", "Admin\ReviewsController@index", ['auth']);
 $router->add("GET", "/admin/reviews/create", "Admin\ReviewsController@create", ['auth']);
 $router->add("POST", "/admin/reviews/create", "Admin\ReviewsController@store", ['auth']);
+$router->add("GET" , "/admin/reviews/{id}/show", "Admin\ReviewsController@show", ['auth']);
+$router->add("POST", "/admin/reviews/{id}/status", "Admin\ReviewsController@updateStatus", ['auth']);
 $router->add("GET", "/admin/reviews/{id}/edit", "Admin\ReviewsController@edit", ['auth']);
 $router->add("POST", "/admin/reviews/{id}/update", "Admin\ReviewsController@update", ['auth']);
 $router->add("POST", "/admin/reviews/{id}/delete", "Admin\ReviewsController@delete", ['auth']);

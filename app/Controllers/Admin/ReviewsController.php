@@ -42,6 +42,28 @@ public function index() {
         );
     }
 
+    public function show($id) {
+        $review = Review::getReviewById($id);
+        return View::render(
+            template: '/admin/reviews/show',
+            data: [
+                'review' => $review
+            ],
+            layout: "layouts/admin"
+        );
+    }
+
+    public function updateStatus($id) {
+        $review = Review::find($id);
+       if(isset($_POST['status']) && in_array($_POST['status'], ['approved', 'rejected'])) {
+         unset($review->user_name, $review->car_name, $review->car_model, $review->car_image);
+        $review->status = $_POST['status'];
+        $review->save();
+       }
+               
+        Router::redirect("/admin/reviews");
+    }
+
     public function store() {
         if($_SERVER['REQUEST_METHOD'] === "POST") {
            $user_id = $_POST['user_id'];

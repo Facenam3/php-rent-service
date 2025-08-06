@@ -12,6 +12,7 @@ class Review extends Model {
     public $rating;
     public $comment;
     public $created_at;
+    public $status;
 
     
     public $user_name;
