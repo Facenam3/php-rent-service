@@ -550,3 +550,72 @@
 [2025-08-05 19:51:53] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Location, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Model.php on line 15
 [2025-08-05 20:00:22] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Location, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Model.php on line 15
 [2025-08-05 20:02:04] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Location, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Model.php on line 15
+[2025-08-05 21:49:23] Error: Error: Class "App\Controllers\Admin\ReviewsController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-05 21:49:45] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:49:47] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:49:52] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:50:09] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/admin/reviews.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 32
+[2025-08-05 21:50:30] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/admin/reviews.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 32
+[2025-08-05 21:50:51] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:51:25] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:51:59] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:52:17] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:53:40] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:54:35] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:54:39] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:54:54] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:54:55] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:54:59] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:55:24] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:57:18] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:58:11] Error: RuntimeException: Error: Template file not found: C:\xampp\htdocs\php-rent\php-rent-service/app/Views/test.php in C:\xampp\htdocs\php-rent\php-rent-service\core\View.php on line 32
+[2025-08-05 21:58:59] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:59:02] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 21:59:09] Error: ErrorException: Undefined property: App\Models\Review::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 33
+[2025-08-05 22:11:50] Error: ErrorException: Undefined property: App\Models\Review::$user_named in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 35
+[2025-08-05 22:14:52] Error: ErrorException: Undefined property: App\Models\Review::$car in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 36
+[2025-08-05 22:14:52] Error: ErrorException: Undefined property: App\Models\Review::$car in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\reviews.php on line 36
+[2025-08-05 22:16:08] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-05 22:17:00] Error: ErrorException: Creation of dynamic property App\Models\Review::$car_name is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-08-05 22:17:05] Error: ErrorException: Creation of dynamic property App\Models\Review::$car_name is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-08-05 22:17:29] Error: ErrorException: Creation of dynamic property App\Models\Review::$car_name is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-08-05 22:50:28] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 19:07:10] Error: PDOException: SQLSTATE[HY000]: General error: 1 table reviews has no column named name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 19:13:53] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\create.php on line 63
+[2025-08-06 19:14:07] Error: ErrorException: Undefined property: App\Models\User::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\create.php on line 43
+[2025-08-06 19:14:09] Error: ErrorException: Undefined property: App\Models\User::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\create.php on line 43
+[2025-08-06 19:15:54] Error: ErrorException: Undefined variable $car_id in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\create.php on line 57
+[2025-08-06 19:17:32] Error: ErrorException: Undefined array key "name" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReviewsController.php on line 49
+[2025-08-06 19:21:56] Error: Error: Call to undefined method App\Controllers\Admin\ReviewsController::store() in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-06 19:47:38] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 42
+[2025-08-06 19:53:24] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: review.id in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 19:53:54] Error: PDOException: SQLSTATE[HY000]: General error: 1 ambiguous column name: id in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 19:54:27] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: review.id in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 19:54:29] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: review.id in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 19:55:56] Error: ErrorException: Undefined variable $reviews in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 13
+[2025-08-06 19:56:06] Error: ErrorException: Attempt to read property "rating" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 13
+[2025-08-06 19:57:22] Error: ErrorException: Attempt to read property "user_id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 43
+[2025-08-06 19:58:29] Error: ErrorException: Attempt to read property "user_id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 41
+[2025-08-06 19:58:30] Error: ErrorException: Attempt to read property "user_id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 41
+[2025-08-06 19:59:49] Error: ErrorException: Attempt to read property "id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 1
+[2025-08-06 20:01:13] Error: ErrorException: Attempt to read property "id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 1
+[2025-08-06 20:01:33] Error: ErrorException: Attempt to read property "user_id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 41
+[2025-08-06 20:02:21] Error: ErrorException: Attempt to read property "rating" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 15
+[2025-08-06 20:02:22] Error: ErrorException: Attempt to read property "rating" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 15
+[2025-08-06 20:02:54] Error: ErrorException: Attempt to read property "user_id" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 41
+[2025-08-06 20:05:34] Error: ErrorException: Undefined variable $eview in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 13
+[2025-08-06 20:06:31] Error: ErrorException: Attempt to read property "rating" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 14
+[2025-08-06 20:06:32] Error: ErrorException: Attempt to read property "rating" on array in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 14
+[2025-08-06 20:07:53] Error: ErrorException: Undefined array key "rating" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 14
+[2025-08-06 20:07:55] Error: ErrorException: Undefined array key "rating" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 14
+[2025-08-06 20:08:29] Error: ErrorException: Undefined array key "rating" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 14
+[2025-08-06 20:09:13] Error: ParseError: syntax error, unexpected token ":", expecting end of file in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 4
+[2025-08-06 20:19:08] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReviewsController.php on line 47
+[2025-08-06 20:24:29] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReviewsController.php on line 83
+[2025-08-06 20:25:27] Error: ErrorException: Undefined array key "user_id" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReviewsController.php on line 83
+[2025-08-06 20:28:46] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: user_name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 20:29:16] Error: ErrorException: Undefined property: App\Models\Review::$user in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 42
+[2025-08-06 20:32:53] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: user_name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 20:34:51] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: car_image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 20:35:33] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: car_image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-06 20:36:25] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: car_image in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
