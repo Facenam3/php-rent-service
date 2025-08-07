@@ -91,4 +91,48 @@ $(document).ready(function(){
             }
         });
     });
+
+    $("#review-approve-status").on('submit',function(e) {
+        e.preventDefault();
+                
+        const form = $(this);
+        const reviewId = form.data('id');
+        const csrfToken = form.find('input[name="_token"]').val();
+
+        $.ajax({
+            url: `/admin/reviews/${reviewId}/approve`,
+            type: "POST",
+            data: {
+                status: status,
+                _token: csrfToken
+            },
+            success: function(res) {
+                console.log("Response: " , res);
+                window.location.href = "/admin/reviews"
+            }              
+            
+        });
+    });
+
+    $("#review-reject-status").on('submit',function(e) {
+        e.preventDefault();
+                
+        const form = $(this);
+        const reviewId = form.data('id');
+        const csrfToken = form.find('input[name="_token"]').val();
+
+        $.ajax({
+            url: `/admin/reviews/${reviewId}/reject`,
+            type: "POST",
+            data: {
+                status: status,
+                _token: csrfToken
+            },
+            success: function(res) {
+                console.log("Response: " , res);
+                window.location.href = "/admin/reviews"
+            }              
+            
+        });
+    });
 });

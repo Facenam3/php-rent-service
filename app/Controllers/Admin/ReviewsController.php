@@ -53,7 +53,18 @@ public function index() {
         );
     }
 
-    public function updateStatus($id) {
+    public function approveStatus($id) {
+        $review = Review::find($id);
+       if(isset($_POST['status']) && in_array($_POST['status'], ['approved', 'rejected'])) {
+         unset($review->user_name, $review->car_name, $review->car_model, $review->car_image);
+        $review->status = $_POST['status'];
+        $review->save();
+       }
+               
+        Router::redirect("/admin/reviews");
+    }
+
+    public function rejectStatus($id) {
         $review = Review::find($id);
        if(isset($_POST['status']) && in_array($_POST['status'], ['approved', 'rejected'])) {
          unset($review->user_name, $review->car_name, $review->car_model, $review->car_image);

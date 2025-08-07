@@ -60,7 +60,17 @@ $router->add("GET", "/admin/reviews", "Admin\ReviewsController@index", ['auth'])
 $router->add("GET", "/admin/reviews/create", "Admin\ReviewsController@create", ['auth']);
 $router->add("POST", "/admin/reviews/create", "Admin\ReviewsController@store", ['auth']);
 $router->add("GET" , "/admin/reviews/{id}/show", "Admin\ReviewsController@show", ['auth']);
-$router->add("POST", "/admin/reviews/{id}/status", "Admin\ReviewsController@updateStatus", ['auth']);
+$router->add("POST", "/admin/reviews/{id}/approve", "Admin\ReviewsController@approveStatus", ['auth']);
+$router->add("POST", "/admin/reviews/{id}/reject", "Admin\ReviewsController@rejectStatus", ['auth']);
 $router->add("GET", "/admin/reviews/{id}/edit", "Admin\ReviewsController@edit", ['auth']);
 $router->add("POST", "/admin/reviews/{id}/update", "Admin\ReviewsController@update", ['auth']);
 $router->add("POST", "/admin/reviews/{id}/delete", "Admin\ReviewsController@delete", ['auth']);
+
+//=============================== CONTACT US ==========================================
+$router->add("GET", "/admin/contacts", "Admin\ContactUsController@index", ['auth']);
+$router->add("GET", "/admin/contacts/create", "Admin\ContactUsController@create", ['auth']);
+$router->add("POST", "/admin/contacts/store", "Admin\ContactUsController@store", ['auth']);
+$router->add("GET", "/admin/contacts/{id}/edit", "Admin\ContactUsController@edit", ['auth']);
+$router->add("POST", "/admin/contacts/{id}/update", "Admin\ContactUsController@update", ['auth']);
+$router->add("GET", "/admin/contacts/{id}/show", "Admin\ContactUsController@show", ['auth']);
+$router->add("POST", "/admin/contacts/{id}/delete", "Admin\ContactUsController@delete", ['auth']);

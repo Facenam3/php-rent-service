@@ -10,10 +10,12 @@ class Model {
         $db = App::get('database');
         return $db->fetchAll("SELECT * FROM " . static::$table, [], static::class);
     }
-    public static function find(mixed $id) : ?static {
-        $db = App::get('database');
-        return $db->fetch("SELECT * FROM " . static::$table . " WHERE id = ?", [$id], static::class);
+    public static function find(mixed $id): ?static {
+    $db = App::get('database');
+    $result = $db->fetch("SELECT * FROM " . static::$table . " WHERE id = ?", [$id], static::class);
+    return $result ?: null; 
     }
+    
     public static function create(array $data) : static {
         $db = App::get('database');
         $columns = implode(', ', array_keys($data));
