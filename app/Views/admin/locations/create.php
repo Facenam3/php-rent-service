@@ -1,7 +1,7 @@
 <div class="py-12 px-12">
     <div class="w-full bg-white dark:bg-gray-800 rounded-md border-2 shadow-md text-black p-6 mt-2">
             <h1 class="p-4 text-xl text-orange-500 font-medium ">Create Location</h1>
-            <a href="/admin/users"
+            <a href="/admin/locations"
                 class="block sm:hidden w-full mb-4 inline-block text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap">
                     ← Back to Table
             </a>
