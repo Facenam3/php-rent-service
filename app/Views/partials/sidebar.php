@@ -3,7 +3,7 @@
     <a href="/admin/dashboard" class="text-orange-600 text-2xl mx-3">Admin Dashboard</a>
     <ul class="mt-6">
         <li class="mb-2">
-            <a href="#" id="btn"
+            <a href="/admin/users" id="btn"
                 class="block text-gray-100 hover:bg-orange-500 hover:rounded-md hover:text-white px-4 py-2">
                 <i class="fa-solid fa-users mx-2 "></i>
                 Users

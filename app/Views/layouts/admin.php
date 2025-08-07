@@ -28,6 +28,7 @@
     <script src="/js/admin/location.js"></script>
     <script src="/js/admin/review.js"></script>
     <script src="/js/admin/contact.js"></script>
+    <script src="/js/admin/user.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/reservation.js"></script>
     </body>

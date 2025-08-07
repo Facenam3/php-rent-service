@@ -47,6 +47,14 @@ $router->addRouteMiddleware('auth', Auth::class);
 ///====================== ADMIN Panel Routes ===========================================
 $router->add("GET", "/admin/dashboard", "Admin\AdminController@index",['auth']);
 
+//=================================== Users ============================================
+$router->add("GET", '/admin/users', 'Admin\UserController@index', ['auth']);
+$router->add("GET", "/admin/users/create", "Admin\UserController@create", ['auth']);
+$router->add("POST", "/admin/users/store", "Admin\UserController@store", ['auth']);
+$router->add("GET", "/admin/users/{id}/edit", "Admin\UserController@edit", ['auth']);
+$router->add("POST", "/admin/users/{id}/update", "Admin\UserController@update", ['auth']);
+$router->add("POST", "/admin/users/{id}/delete", "Admin\UserController@delete", ['auth']);
+
 //============================ LOCATIONS =============================================
 $router->add("GET", "/admin/locations", "Admin\LocationsController@index", ['auth']);
 $router->add("GET", "/admin/locations/create", "Admin\LocationsController@create", ['auth']);
