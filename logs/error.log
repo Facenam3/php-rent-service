@@ -682,3 +682,14 @@
 [2025-08-07 22:03:52] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
 [2025-08-07 22:05:35] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
 [2025-08-07 22:06:44] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 22:46:35] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: users.created_at in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-07 22:46:57] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: users.created_at in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-07 22:46:58] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: users.created_at in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-07 22:47:44] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such table: user in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-07 22:49:22] Error: ErrorException: Undefined property: App\Models\User::$name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\users\users.php on line 33
+[2025-08-07 23:22:56] Error: ErrorException: Undefined array key "name" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 41
+[2025-08-07 23:26:31] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 23:40:45] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReviewsController.php on line 127
+[2025-08-07 23:45:21] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\users\users.php on line 33
+[2025-08-07 23:45:45] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\users\users.php on line 33
+[2025-08-07 23:56:13] Error: Error: Attempt to assign property "first_name" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\UserController.php on line 78
