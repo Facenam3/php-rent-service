@@ -1,7 +1,10 @@
 <div class="py-12 px-12">
     <div class="w-full bg-white dark:bg-gray-800 rounded-md border-2 shadow-md text-black p-6 mt-2">
         <h1 class="p-4 text-xl text-orange-500 font-medium">Review Details</h1>
-
+        <a href="/admin/reviews"
+                  class="w-full mb-4 inline-block text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap">
+                    ← Back to Table
+        </a>
         <div class="flex flex-col-reverse gap-6 lg:flex-row">
             <div class="w-full lg:w-1/2">
                 <div class="mb-4">
@@ -19,7 +22,7 @@
                 </div>
 
                 <div class="mt-6 flex gap-3">
-                    <form action="/admin/reviews/<?= $review->id ?>/status" method="POST">
+                    <form id="review-approve-code" action="/admin/reviews/<?= $review->id ?>/approve" data-id="<?= $review->id ?>" method="POST">
                         <?= csrf_token() ?>
                         <input type="hidden" name="status" value="approved">
                         <button type="submit"
@@ -27,7 +30,7 @@
                             Approve
                         </button>
                     </form>
-                    <form action="/admin/reviews/<?= $review->id ?>/status" method="POST">
+                    <form id="review-reject-code" action="/admin/reviews/<?= $review->id ?>/reject" data-id="<?= $review->id ?>" method="POST">
                         <?= csrf_token() ?>
                         <input type="hidden" name="status" value="rejected">
                         <button type="submit"

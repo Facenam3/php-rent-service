@@ -623,3 +623,62 @@
 [2025-08-06 21:36:03] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: user_name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
 [2025-08-06 21:42:02] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: user_name in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
 [2025-08-06 21:43:59] Error: ErrorException: Undefined array key "rating" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReviewsController.php on line 71
+[2025-08-06 22:13:43] Error: TypeError: Core\Model::find(): Return value must be of type ?App\Models\Review, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Model.php on line 15
+[2025-08-07 20:10:56] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 123
+[2025-08-07 20:11:34] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 123
+[2025-08-07 20:11:35] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 123
+[2025-08-07 20:11:41] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 123
+[2025-08-07 20:12:07] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 123
+[2025-08-07 20:15:14] Error: ErrorException: Undefined variable $review in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 78
+[2025-08-07 20:15:44] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 114
+[2025-08-07 20:18:08] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:19:03] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:19:32] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:19:34] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:19:34] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:19:40] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:21:40] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:21:54] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:22:21] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:22:21] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:22:22] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:24:24] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:24:25] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:24:52] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:25:34] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:26:04] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:27:00] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:27:09] Error: Error: Call to undefined method App\Controllers\Admin\ContactUsController::index() in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 20:28:16] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:28:43] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:29:07] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:29:08] Error: ErrorException: Undefined property: App\Models\Contact::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 115
+[2025-08-07 20:29:35] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:30:17] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:34:33] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:34:34] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:34:43] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:35:39] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:38:29] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:38:29] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:38:35] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 20:39:07] Error: ErrorException: Undefined variable $currentPage in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\contacts\contacts.php on line 124
+[2025-08-07 21:10:56] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:11:34] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:13:09] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:15:25] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:15:35] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:50:00] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:52:37] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:52:39] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 21:54:16] Error: ErrorException: Attempt to read property "rating" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\show.php on line 10
+[2025-08-07 21:54:28] Error: ErrorException: Attempt to read property "id" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 4
+[2025-08-07 21:55:55] Error: ErrorException: Attempt to read property "rating" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\show.php on line 10
+[2025-08-07 21:56:07] Error: ErrorException: Attempt to read property "id" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 4
+[2025-08-07 21:56:47] Error: ErrorException: Attempt to read property "id" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 4
+[2025-08-07 21:57:45] Error: ErrorException: Attempt to read property "id" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 4
+[2025-08-07 21:57:56] Error: ErrorException: Attempt to read property "id" on bool in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reviews\edit.php on line 4
+[2025-08-07 21:58:41] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 22:03:52] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 22:05:35] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-07 22:06:44] Error: Error: Unknown named parameter $id in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
