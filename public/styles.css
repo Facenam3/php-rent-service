@@ -631,10 +631,6 @@ video {
   z-index: 50;
 }
 
-.col-span-full {
-  grid-column: 1 / -1;
-}
-
 .m-3 {
   margin: 0.75rem;
 }
@@ -825,6 +821,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -1893,11 +1893,6 @@ video {
     padding-bottom: 0.75rem;
   }
 
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .sm\:text-center {
     text-align: center;
   }
@@ -2092,14 +2087,6 @@ video {
 
   .lg\:w-64 {
     width: 16rem;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
