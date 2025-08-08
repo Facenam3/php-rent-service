@@ -17,17 +17,10 @@
             </a>
         </li>      
         <li class="mb-2">
-            <a href="#" id="btn"
+            <a href="/admin/cars" id="btn"
                 class="block text-gray-100 hover:bg-orange-500 hover:rounded-md hover:text-white px-4 py-2">
                 <i class="fa-solid fa-car mx-2"></i>
                 Cars
-            </a>
-        </li>
-         <li class="mb-2">
-            <a href="#" id="btn"
-                class="block text-gray-100 hover:bg-orange-500 hover:rounded-md hover:text-white px-4 py-2">
-                <i class="fa-solid fa-car-battery mx-2"></i>
-                Cars Specification
             </a>
         </li>
          <li class="mb-2">

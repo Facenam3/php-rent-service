@@ -693,3 +693,36 @@
 [2025-08-07 23:45:21] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\users\users.php on line 33
 [2025-08-07 23:45:45] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\users\users.php on line 33
 [2025-08-07 23:56:13] Error: Error: Attempt to assign property "first_name" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\UserController.php on line 78
+[2025-08-08 20:43:51] Error: ErrorException: Undefined property: App\Models\Car::$comment in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\cars.php on line 65
+[2025-08-08 20:44:18] Error: ErrorException: Undefined property: App\Models\Car::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\cars.php on line 106
+[2025-08-08 20:44:26] Error: ErrorException: Undefined property: App\Models\Car::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\cars.php on line 105
+[2025-08-08 20:44:34] Error: ErrorException: Undefined property: App\Models\Car::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\cars.php on line 105
+[2025-08-08 20:45:02] Error: ErrorException: Undefined property: App\Models\Car::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\cars.php on line 106
+[2025-08-08 20:45:20] Error: ErrorException: Undefined property: App\Models\Car::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\cars.php on line 106
+[2025-08-08 21:32:33] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\create.php on line 46
+[2025-08-08 22:10:44] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:11:34] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:12:11] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:12:25] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:13:06] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:14:50] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:15:10] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-08 22:38:09] Error: TypeError: Cannot assign null to property App\Models\Car::$image_path of type string in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-08-08 22:38:38] Error: TypeError: Cannot assign null to property App\Models\Car::$image_path of type string in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-08-08 22:40:21] Error: TypeError: Cannot assign null to property App\Models\Car::$image_path of type string in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-08-08 22:40:42] Error: TypeError: Cannot assign null to property App\Models\Car::$image_path of type string in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-08-08 22:41:39] Error: TypeError: Cannot assign null to property App\Models\Car::$image_path of type string in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 47
+[2025-08-08 23:25:37] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:29:03] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:30:05] Error: ErrorException: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\edit.php on line 85
+[2025-08-08 23:30:27] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:30:51] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:32:05] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:33:54] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:34:06] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ContactUsController.php on line 91
+[2025-08-08 23:34:35] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\CarController.php on line 190
+[2025-08-08 23:35:59] Error: Error: Attempt to assign property "doors" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\CarController.php on line 171
+[2025-08-08 23:36:38] Error: Error: Attempt to assign property "doors" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\CarController.php on line 171
+[2025-08-08 23:38:34] Error: Error: Attempt to assign property "doors" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\CarController.php on line 172
+[2025-08-08 23:40:23] Error: Error: Call to a member function delete() on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\CarController.php on line 190
+[2025-08-08 23:40:48] Error: TypeError: App\Models\CarSpecification::forCar(): Return value must be of type ?App\Models\CarSpecification, bool returned in C:\xampp\htdocs\php-rent\php-rent-service\app\Models\CarSpecification.php on line 24
