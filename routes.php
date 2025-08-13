@@ -63,6 +63,15 @@ $router->add("GET", "/admin/cars/{id}/edit", "Admin\CarController@edit", ['auth'
 $router->add("POST", "/admin/cars/{id}/update", "Admin\CarController@update", ['auth']);
 $router->add("POST", "/admin/cars/{id}/delete", "Admin\CarController@delete", ['auth']);
 
+//======================================== Reservations ========================================
+$router->add("GET", "/admin/reservations", "Admin\ReservationController@index", ['auth']);
+$router->add("GET", "/admin/reservations/create", "Admin\ReservationController@create", ['auth']);
+$router->add("POST", "/admin/reservations/store", "Admin\ReservationController@store", ['auth']);
+$router->add("GET", "/admin/reservations/{id}/edit", "Admin\ReservationController@edit", ['auth']);
+$router->add("POST", "/admin/reservations/{id}/update", "Admin\ReservationController@update", ['auth']);
+$router->add("GET", "/admin/reservations/{id}/show", "Admin\ReservationController@show", ['auth']);
+$router->add("POST", "/admin/reservations/{id}/delete", "Admin\ReservationController@delete", ['auth']);
+
 //============================ LOCATIONS =============================================
 $router->add("GET", "/admin/locations", "Admin\LocationsController@index", ['auth']);
 $router->add("GET", "/admin/locations/create", "Admin\LocationsController@create", ['auth']);
