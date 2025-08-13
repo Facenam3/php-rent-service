@@ -24,7 +24,7 @@
             </a>
         </li>
          <li class="mb-2">
-            <a href="#" id="btn"
+            <a href="/admin/reservations" id="btn"
                 class="block text-gray-100 hover:bg-orange-500 hover:rounded-md hover:text-white px-4 py-2">
                 <i class="fa-solid fa-book mx-2"></i>
                 Reservations
