@@ -94,6 +94,7 @@
                 <div class="mt-6">
                 <h3 class="text-lg font-semibold mb-2">Leave a Review</h3>
                 <form action="/reviews/store" method="POST" class="space-y-3">
+                    <?= csrf_token() ?>
                     <input type="hidden" name="car_id" value="<?= $car->id ?>">
                     <input type="hidden" name="user_id" value="<?= $user->id ?>">
                     <label class="block">

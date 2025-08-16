@@ -90,7 +90,7 @@ class ReservationController {
                 Payment::create([
                 'reservation_id' => $reservation->id,
                 'payment_method' => $payment_method,
-                'amount' => $amount,
+                'amount' => $reservation->total_price,
                 'status' => $status,
                 'transaction_id' => $reservation->id
                 ]);
@@ -145,7 +145,7 @@ class ReservationController {
             $reservation = Reservation::find($id);
             $payment = Payment::findByReservation($reservation->id);
 
-            $reservation->car_id = $_POST['car_id'];
+            $reservation->car_id = (int)$_POST['car_id'];
             $reservation->user_id = $_POST['user_id'];
             $reservation->email = $_POST['email'];
             $reservation->start_date = $_POST['start_date'];
@@ -154,7 +154,7 @@ class ReservationController {
             $reservation->dropoff_location_id = $_POST['dropoff_location_id'];
             $reservation->status = $_POST['status'];            
             $reservation->price_per_day = $_POST['price_per_day'];
-
+            
             $start = new DateTime($_POST['start_date']);
             $end = new DateTime($_POST['end_date']);
             $interval = $start->diff($end);
@@ -173,8 +173,7 @@ class ReservationController {
             $reservation->save();
 
             if($reservation) {
-                $car = Car::find($reservation->car_id);
-                $car->reserved($reservation->car_id);
+                Car::reserved($reservation->car_id);
 
                 $payment->payment_method = $_POST['payment_method'];
                 $payment->amount = $reservation->total_price;
@@ -187,10 +186,11 @@ class ReservationController {
     }
 
     public function show($id) {
+        $reservation = Reservation::findById($id);
          return View::render(
             template: "admin/reservations/show",
             data: [
-
+                'reservation' => $reservation
             ],
             layout: "layouts/admin"
         );

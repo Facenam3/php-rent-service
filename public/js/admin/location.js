@@ -87,10 +87,5 @@ $(document).ready(function() {
         });
     });
 
-    $(function () {
-        $("#sidebar-toggle").on("click", function () {
-            $("#admin-sidebar").toggleClass("hidden");
-            console.log("Sidebar toggled");
-        });
-    });
+   
 });

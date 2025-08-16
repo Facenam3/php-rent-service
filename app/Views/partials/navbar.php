@@ -1,4 +1,4 @@
- <nav class="bg-white border-gray-200 dark:bg-gray-800">
+ <nav  class="bg-white border-gray-200 dark:bg-gray-800">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <p class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rent a <span class="text-orange-500">Car</span></p>
@@ -15,23 +15,23 @@
                 </svg>
             </button>
             
-            
-       <div class="items-center justify-between hidden w-full md:hidden lg:flex md:w-auto md:order-1" id="navbar-user">
-            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
+
+       <div  class="hidden w-full lg:order-1 lg:flex lg:w-auto" id="navbar-user">
+            <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 dark:border-gray-700">
                 <li>
-                    <a href="/" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Home</a>
+                    <a href="/" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 dark:text-white">Home</a>
                 </li>
                 <li>
-                    <a href="/cars" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Vehicles</a>
+                    <a href="/cars" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 dark:text-white">Vehicles</a>
                 </li>
                 <li>
-                    <a href="/reservations" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Reservations</a>
+                    <a href="/reservations" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 dark:text-white">Reservations</a>
                 </li>
                 <li>
-                    <a href="/about-us" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">About us</a>
+                    <a href="/about-us" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 dark:text-white">About us</a>
                 </li>
                 <li>
-                    <a href="/contact" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white">Contact</a>
+                    <a href="/contact" class="block nav-link py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:p-0 dark:text-white">Contact</a>
                 </li>
                 <?php if(isset($user)) :?>
                 <li class="md:hidden mt-2"> 

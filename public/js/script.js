@@ -1,6 +1,17 @@
 $(document).ready(function () {
     $('#navbar-toggle').on('click', function () {
         $('#navbar-user').toggleClass('hidden');
+        $("#admin-sidebar").addClass("hidden");
+    });
+
+    $(function () {
+      $("#sidebar-toggle").on("click", function () {
+          $("#admin-sidebar").removeClass("hidden");
+      });
+
+      $("#sidebar-close").on("click", function () {
+          $("#admin-sidebar").addClass("hidden");
+      });
     });
 
 

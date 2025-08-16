@@ -1,6 +1,11 @@
 <aside id="admin-sidebar" class="bg-white border-gray-200 dark:bg-gray-800 w-full px-8 py-4 rounded-lg
     hidden absolute top-[60px] left-0 z-50 lg:relative lg:w-64 lg:block">
     <a href="/admin/dashboard" class="text-orange-600 text-2xl mx-3">Admin Dashboard</a>
+    <div class="flex justify-end mb-4 lg:hidden">
+    <button id="sidebar-close" class="p-2 lg:hidden md:inline-block sm:inline-block text-white bg-red-500 rounded-md">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+</div>
     <ul class="mt-6">
         <li class="mb-2">
             <a href="/admin/users" id="btn"

@@ -88,7 +88,8 @@ $(document).ready(function() {
     $(document).on("click", "#reservation-show", function(e) {
         e.preventDefault();
 
-        alert("Show");
+        const reservation_id = $(this).data('id');
+        window.location.href = "/admin/reservations/" + reservation_id + "/show";
     });
 
     $(document).on("click", "#reservation-edit", function(e){
