@@ -11,9 +11,9 @@ class Model {
         return $db->fetchAll("SELECT * FROM " . static::$table, [], static::class);
     }
     public static function find(mixed $id): ?static {
-    $db = App::get('database');
-    $result = $db->fetch("SELECT * FROM " . static::$table . " WHERE id = ?", [$id], static::class);
-    return $result ?: null; 
+        $db = App::get('database');
+        $result = $db->fetch("SELECT * FROM " . static::$table . " WHERE id = ?", [$id], static::class);
+        return $result ?: null; 
     }
     
     public static function create(array $data) : static {

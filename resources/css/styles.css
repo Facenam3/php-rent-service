@@ -22,3 +22,7 @@
 .active-link {
   color: #f97316 !important;
 }
+
+#admin-sidebar {
+  top: 60px;
+}

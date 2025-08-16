@@ -831,3 +831,9 @@
 [2025-08-13 22:26:58] Error: TypeError: Core\Router::callAction(): Return value must be of type string, null returned in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
 [2025-08-13 22:36:43] Error: TypeError: Cannot assign string to property App\Models\Reservation::$pickup_location_id of type int in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReservationController.php on line 154
 [2025-08-13 22:38:15] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: car_brand in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-16 20:58:00] Error: ErrorException: Undefined variable $car in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 23
+[2025-08-16 20:58:58] Error: ErrorException: Undefined variable $car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 41
+[2025-08-16 21:02:38] Error: TypeError: Cannot assign string to property App\Models\Reservation::$user_id of type ?int in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\Admin\ReservationController.php on line 149
+[2025-08-16 21:14:33] Error: ErrorException: Undefined variable $car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 41
+[2025-08-16 21:15:21] Error: Error: Typed property App\Models\Car::$fuel_consumption must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 45
+[2025-08-16 21:16:09] Error: Error: Typed property App\Models\Car::$fuel_consumption must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 45
