@@ -99,3 +99,6 @@ $router->add("GET", "/admin/contacts/{id}/edit", "Admin\ContactUsController@edit
 $router->add("POST", "/admin/contacts/{id}/update", "Admin\ContactUsController@update", ['auth']);
 $router->add("GET", "/admin/contacts/{id}/show", "Admin\ContactUsController@show", ['auth']);
 $router->add("POST", "/admin/contacts/{id}/delete", "Admin\ContactUsController@delete", ['auth']);
+
+//============================================== PAYMENTS ==================================
+$router->add("GET", "/admin/payments", "Admin\PaymentController@index", ['auth']);
