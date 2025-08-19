@@ -30,4 +30,56 @@ class Payment extends Model{
             $reservationId ]
         );
     }
+
+    public static function getRecent(?int $limit = null, ?int $page = null, ?string $search = null) {
+        /** @var \Core\Database $db */
+        $db = App::get('database');
+
+        $query = "
+            SELECT payments.*,
+                reservations.id AS reservation_id
+            FROM payments
+            JOIN reservations ON payments.reservation_id = reservations.id
+        ";
+
+        $params = [];
+
+        if ($search !== null) {
+            $query .= " WHERE payments.amount LIKE ? OR payments.status LIKE ?";
+            $params = ["%$search%", "%$search%"];
+        }
+
+        $query .= " ORDER BY payments.created_at DESC";
+
+        if ($limit !== null) {
+            $query .= " LIMIT ?";
+            $params[] = $limit;
+        }
+
+        if ($page !== null && $limit !== null) {
+            $offset = ($page - 1) * $limit;
+            $query .= " OFFSET ?";
+            $params[] = $offset;
+        }
+
+        return $db->fetchAll($query, $params, static::class);
+    }
+
+    public static function count(?string $search = null): int {
+        /** @var \Core\Database $db */
+        $db = App::get('database');
+
+        $query = "
+            SELECT COUNT(*) FROM payments
+            JOIN reservations ON payments.reservation_id = reservations.id
+        ";
+        $params = [];
+
+        if ($search !== null) {
+            $query .= " WHERE payments.amount LIKE ? OR payments.status LIKE ?";
+            $params = ["%$search%", "%$search%"];
+        }
+
+        return (int) $db->query($query, $params)->fetchColumn();
+    }
 }

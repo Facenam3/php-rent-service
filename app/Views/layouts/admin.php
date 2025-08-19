@@ -27,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/admin/location.js"></script>
     <script src="/js/admin/review.js"></script>
+    <script src="/js/admin/payment.js"></script>
     <script src="/js/admin/contact.js"></script>
     <script src="/js/admin/car.js"></script>
     <script src="/js/admin/user.js"></script>

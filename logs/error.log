@@ -837,3 +837,18 @@
 [2025-08-16 21:14:33] Error: ErrorException: Undefined variable $car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 41
 [2025-08-16 21:15:21] Error: Error: Typed property App\Models\Car::$fuel_consumption must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 45
 [2025-08-16 21:16:09] Error: Error: Typed property App\Models\Car::$fuel_consumption must not be accessed before initialization in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\reservations\show.php on line 45
+[2025-08-19 23:10:02] Error: Error: Class "App\Controllers\Admin\PaymentController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-19 23:11:17] Error: Error: Class "App\Controllers\Admin\PaymentController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-19 23:11:36] Error: Error: Class "App\Controllers\Admin\PaymentController" not found in C:\xampp\htdocs\php-rent\php-rent-service\core\Router.php on line 120
+[2025-08-19 23:18:40] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:19:41] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:19:42] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:19:42] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:22:14] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:22:17] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:22:18] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:23:58] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:23:59] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:24:04] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:25:10] Error: PDOException: SQLSTATE[HY000]: General error: 1 near "FROM": syntax error in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-19 23:39:39] Error: ErrorException: Undefined property: App\Models\Payment::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\payments\payments.php on line 107
