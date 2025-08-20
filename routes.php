@@ -62,6 +62,7 @@ $router->add("POST", "/admin/cars/store", "Admin\CarController@store", ['auth'])
 $router->add("GET", "/admin/cars/{id}/edit", "Admin\CarController@edit", ['auth']);
 $router->add("POST", "/admin/cars/{id}/update", "Admin\CarController@update", ['auth']);
 $router->add("POST", "/admin/cars/{id}/delete", "Admin\CarController@delete", ['auth']);
+$router->add("GET", "/admin/cars/{id}/show", "Admin\CarCOntroller@show", ["auth"]);
 
 //======================================== Reservations ========================================
 $router->add("GET", "/admin/reservations", "Admin\ReservationController@index", ['auth']);

@@ -181,6 +181,16 @@ class CarController {
         }
     }
 
+    public function show(int $id) {
+        $car = Car::findById($id);
+        return View::render(
+            template: "/admin/cars/show",
+            data: [
+                'car' => $car
+            ],
+            layout: "layouts/admin"
+        );
+    }
 
     public function delete($id) {
         $car = Car::findById($id);
