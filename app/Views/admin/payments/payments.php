@@ -6,10 +6,6 @@
         <h1 class="text-xl sm:text-2xl text-orange-600 font-semibold whitespace-nowrap">
           Payments
         </h1>
-        <a href="/admin/payments/create"
-          class="inline-block text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap">
-          Add New Payment
-        </a>
       </div>
 
       <form class="mt-6 max-w-full" method="GET" action="">

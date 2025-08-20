@@ -2,7 +2,7 @@
     <div class="w-full bg-white dark:bg-gray-800 rounded-md border-2 shadow-md text-black p-6 mt-2">
             <h1 class="p-4 text-xl text-orange-500 font-medium ">Create Contact Us</h1>
             <a href="/admin/contacts"
-                class="block sm:hidden w-full mb-4 inline-block text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap">
+                class="inline-block lg:hidden w-full mb-4 inline-block text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap">
                     ← Back to Table
             </a>
             <form action="/admin/contacts/store" method="POST" class="w-full mx-auto" id="contact-us-form">
@@ -20,6 +20,10 @@
                                     placeholder="Enter your contact us message."
                                     ></textarea>   
                             </div>
+                            <a href="/admin/contacts"
+                                class="hidden lg:inline-block focus:outline-none text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-5 py-2 me-2 mb-2 dark:focus:ring-orange-900" >
+                                Back To Contacts
+                            </a>
                             <input type="submit" value="Submit"
                                 class="focus:outline-none text-white bg-orange-500 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-5 py-2 me-2 mb-2 dark:focus:ring-orange-900">
                         </div>

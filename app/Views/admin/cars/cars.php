@@ -38,7 +38,7 @@
           </div>
         </form>
 
-      <div class="hidden sm:block overflow-x-auto mt-6 rounded-md border border-gray-300">
+      <div class="hidden lg:block overflow-x-auto mt-6 rounded-md border border-gray-300">
         <table class="min-w-full divide-y divide-gray-300 text-sm sm:text-base">
           <thead class="bg-orange-500 text-white uppercase font-medium  text-center">
             <tr>
@@ -82,15 +82,18 @@
         </table>
       </div>
 
-      <div class="sm:hidden mt-6 space-y-4">
+      <div class="block lg:hidden mt-6 space-y-4">
         <?php if($cars) :?>
             <?php foreach($cars as $car) :?>
             <div class="bg-gray-100 dark:bg-gray-300 p-4 rounded-md shadow">
                 <div class="flex justify-between items-center mb-2">
                 <div class="font-semibold text-lg text-orange-600">Car #<?= $car->id ?></div>
                 <div class="flex gap-3">
+                    <a href="#" class="text-green-600 whitespace-nowrap px-2" data-id="<?= $car->id ?>" id="car-show">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                     </a>
                     <a href="#" class="text-blue-600" data-id="<?= $car->id ?>" id="car-edit">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                      <i class="fa-solid fa-pen-to-square"></i>
                     </a>
                     <form id="car-delete" data-id="<?= $car->id ?>">
                     <?= csrf_token() ?>
