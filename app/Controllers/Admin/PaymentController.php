@@ -26,4 +26,16 @@ class PaymentController {
             layout: "layouts/admin"
         );
     }
+
+    public function show(int $id){
+        $payment = Payment::find($id);
+        // var_dump($payment);die();
+        return View::render(
+            template: '/admin/payments/show',
+            data : [
+                'payment' => $payment
+            ],
+            layout: 'layouts/admin'
+        );
+    }
 }

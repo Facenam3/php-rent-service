@@ -102,3 +102,4 @@ $router->add("POST", "/admin/contacts/{id}/delete", "Admin\ContactUsController@d
 
 //============================================== PAYMENTS ==================================
 $router->add("GET", "/admin/payments", "Admin\PaymentController@index", ['auth']);
+$router->add("GET", "/admin/payments/{id}/show", 'Admin\PaymentController@show', ['auth']);
