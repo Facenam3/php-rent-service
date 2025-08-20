@@ -124,9 +124,14 @@
                     </div>
                 </div>
             </div>
-        <input type="button" value="Next Step" 
-            @click="step = 2"
-            class="focus:outline-none text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-5 py-2 me-2 mb-2 dark:focus:ring-orange-900" />
+            <a href="/admin/reservations"
+                class="inline-block focus:outline-none text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-5 py-2 me-2 mb-2 dark:focus:ring-orange-900" >
+                Back To Reservations
+            </a>
+            <input type="button" value="Next Step" 
+                @click="step = 2"
+                class="focus:outline-none text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-5 py-2 me-2 mb-2 dark:focus:ring-orange-900" />
+                
       </div>
     
       <div x-show="step === 2" x-transition>

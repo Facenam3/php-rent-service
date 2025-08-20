@@ -19,6 +19,13 @@ $(document).ready(function() {
             }
         });
     });
+
+    $(document).on("click", "#car-show", function(e) {
+        e.preventDefault();
+
+        const car_id = $(this).data('id');
+        window.location.href = "/admin/cars/" + car_id + '/show';
+    });
     
     $(document).on("click", "#car-edit", function(e) {
         e.preventDefault();
