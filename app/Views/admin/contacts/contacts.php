@@ -38,7 +38,7 @@
           </div>
         </form>
 
-      <div class="hidden sm:block overflow-x-auto mt-6 rounded-md border border-gray-300">
+      <div class="hidden lg:block overflow-x-auto mt-6 rounded-md border border-gray-300">
         <table class="min-w-full divide-y divide-gray-300 text-sm sm:text-base">
           <thead class="bg-orange-500 text-white uppercase font-medium  text-center">
             <tr>
@@ -91,7 +91,7 @@
         </table>
       </div>
 
-      <div class="sm:hidden mt-6 space-y-4">
+      <div class="block lg:hidden mt-6 space-y-4">
         <?php if($contacts) :?>
             <?php foreach($contacts as $contact) :?>
             <div class="bg-gray-100 dark:bg-gray-300 p-4 rounded-md shadow">
