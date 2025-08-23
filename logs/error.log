@@ -854,3 +854,5 @@
 [2025-08-19 23:39:39] Error: ErrorException: Undefined property: App\Models\Payment::$user_name in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\payments\payments.php on line 107
 [2025-08-20 22:43:55] Error: ErrorException: Undefined variable $car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\show.php on line 38
 [2025-08-20 22:44:55] Error: ErrorException: Undefined variable $car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\show.php on line 38
+[2025-08-23 23:00:41] Error: Exception: Could not connect to the database in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 22
+[2025-08-23 23:04:22] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such table: users in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
