@@ -15,7 +15,7 @@ public function index() {
         $page = $_GET['page'] ?? 1;
 
         $reviews = Review::getRecent($limit, $page,$search);
-        $total = Review::count($search);
+        $total = Review::countSearch($search);
 
         return View::render(            
            template: 'admin/reviews/reviews',
