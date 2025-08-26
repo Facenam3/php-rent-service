@@ -87,6 +87,7 @@ class ReservationController {
             ]);
 
             if($reservation) {
+                Car::reserved($car_id);
                 Payment::create([
                 'reservation_id' => $reservation->id,
                 'payment_method' => $payment_method,
