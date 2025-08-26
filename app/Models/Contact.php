@@ -57,4 +57,17 @@ class Contact extends Model{
 
         return (int) $db->query($query, $params)->fetchColumn();
     }
+
+    public static function contactsThisMonth(): int {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total
+            FROM contact
+            WHERE strftime('%Y-%m', created_at) = strftime('%Y-%m', 'now')
+        ";
+
+        $row = $db->fetch($sql);
+        return (int) ($row['total'] ?? 0);
+    }
 }

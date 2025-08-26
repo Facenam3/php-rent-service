@@ -79,4 +79,17 @@ class User extends Model {
 
         return (int) $db->query($query, $params)->fetchColumn();
     }
+
+    public static function newUsersThisMonth() : int {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total
+            FROM users 
+            WHERE strftime('%Y-%m', created) = strftime('%Y-%m', 'now')
+        ";
+
+        $row = $db->fetch($sql);
+        return (int) ($row['total'] ?? 0);
+    }
 }
