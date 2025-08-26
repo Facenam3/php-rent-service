@@ -159,4 +159,29 @@ class Car extends Model {
         $sql = "UPDATE cars SET status = 'booked' WHERE id = ?";
        return $db->query($sql, [$id]);
     }
+
+    public static function availableCars() {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total FROM cars
+            WHERE status = 'available'
+        ";
+
+        $row = $db->fetch($sql);
+        return (int) ($row['total'] ?? 0);
+    }
+
+    public static function bookedCars() {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total FROM cars
+            WHERE status = 'booked'
+        ";
+
+         $row = $db->fetch($sql);
+        return (int) ($row['total'] ?? 0);
+
+    }
 }

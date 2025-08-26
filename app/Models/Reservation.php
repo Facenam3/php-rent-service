@@ -120,4 +120,32 @@ class Reservation extends Model {
 
         return $result ? $result : null;
     }
+
+    public static function reservationsPending() {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total
+            FROM reservations
+            WHERE status = 'pending'
+        ";
+
+        $row = $db->fetch($sql);
+
+        return (int) ($row['total'] ?? 0);
+    }
+
+    public static function reservationsCompleted() {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total
+            FROM reservations
+            WHERE status = 'complete'
+        ";
+
+        $row = $db->fetch($sql);
+
+        return (int) ($row['total'] ?? 0);
+    }
 }

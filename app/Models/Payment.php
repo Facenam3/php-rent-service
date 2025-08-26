@@ -82,4 +82,31 @@ class Payment extends Model{
 
         return (int) $db->query($query, $params)->fetchColumn();
     }
+
+    public static function totalRevenueThisMonth(): float {
+        $db = App::get("database");
+
+        $sql = "
+            SELECT SUM(amount) as total
+            FROM payments
+            WHERE strftime('%Y-%m', created_at) = strftime('%Y-%m', 'now')
+        ";
+
+        $row = $db->fetch($sql);
+        return (float) ($row['total'] ?? 0);
+    }
+
+    public static function pendingPaymentsThisMonth(): int {
+        $db = App::get('database');
+
+        $sql = "
+            SELECT COUNT(*) as total
+            FROM payments
+            WHERE strftime('%Y-%m', created_at) = strftime('%Y-%m', 'now')
+            AND status = 'pending'
+        ";
+
+        $row = $db->fetch($sql);
+        return (int) ($row['total'] ?? 0);
+    }
 }

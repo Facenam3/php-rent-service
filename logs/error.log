@@ -856,3 +856,13 @@
 [2025-08-20 22:44:55] Error: ErrorException: Undefined variable $car_specifications in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\cars\show.php on line 38
 [2025-08-23 23:00:41] Error: Exception: Could not connect to the database in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 22
 [2025-08-23 23:04:22] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such table: users in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-26 21:40:17] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such column: created_at in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-26 21:40:59] Error: ErrorException: Creation of dynamic property App\Models\User::$total is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-08-26 21:41:03] Error: ErrorException: Creation of dynamic property App\Models\User::$total is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-08-26 21:41:03] Error: ErrorException: Creation of dynamic property App\Models\User::$total is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-08-26 21:41:04] Error: ErrorException: Creation of dynamic property App\Models\User::$total is deprecated in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 57
+[2025-08-26 21:41:35] Error: ArgumentCountError: PDOStatement::setFetchMode() expects exactly 1 arguments for the fetch mode provided, 2 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-08-26 21:41:36] Error: ArgumentCountError: PDOStatement::setFetchMode() expects exactly 1 arguments for the fetch mode provided, 2 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-08-26 21:44:43] Error: ArgumentCountError: PDOStatement::setFetchMode() expects exactly 1 arguments for the fetch mode provided, 2 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-08-26 21:44:44] Error: ArgumentCountError: PDOStatement::setFetchMode() expects exactly 1 arguments for the fetch mode provided, 2 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
+[2025-08-26 21:46:10] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such table: contacts in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
