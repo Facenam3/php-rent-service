@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Core\App;
+use Core\Database;
+use App\Services\ReservationCleaner;
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$config = [
+    'driver'   => $_ENV['DB_DRIVER'],
+    'dbname'   => __DIR__ . '/' . ltrim($_ENV['DB_NAME'], './'),
+    'username' => $_ENV['DB_USERNAME'] ?? null,
+    'password' => $_ENV['DB_PASSWORD'] ?? null,
+    'options'  => [
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]
+];
+
+App::bind('db', new Database($config));
+
+$command = $argv[1] ?? null;
+
+switch ($command) {
+    case 'clear:reservations':
+        (new ReservationCleaner())->handle();
+        break;
+
+    default:
+        echo "Available commands:\n";
+        echo "  clear:reservations   Clear expired car reservations\n";
+}
