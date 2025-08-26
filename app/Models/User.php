@@ -64,7 +64,7 @@ class User extends Model {
         return $db->fetchAll($query, $params, static::class);
     }
 
-    public static function count(?string $search = null): int {
+    public static function countSearch(?string $search = null): int {
         /** @var \Core\Database $db */
         $db = App::get('database');
 

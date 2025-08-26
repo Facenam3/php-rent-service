@@ -19,7 +19,7 @@ class ReservationController {
         $page = $_GET['page'] ?? 1;
 
         $reservations = Reservation::getRecent($limit, $page,$search);
-        $total = Reservation::count($search);   
+        $total = Reservation::countSearch($search);   
 
         return View::render(
             template: "admin/reservations/reservations",

@@ -14,7 +14,7 @@ class ContactUsController {
         $page = $_GET['page'] ?? 1;
 
         $contacts = Contact::getRecent($limit, $page,$search);
-        $total = Contact::count($search);
+        $total = Contact::countSearch($search);
 
         return View::render(
             template: 'admin/contacts/contacts',

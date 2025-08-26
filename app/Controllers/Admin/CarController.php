@@ -14,7 +14,7 @@ class CarController {
         $page = $_GET['page'] ?? 1;
 
         $cars = Car::getRecent($limit, $page,$search);
-        $total = Car::count($search);
+        $total = Car::countSearch($search);
         return View::render(
             template: "admin/cars/cars",
             data: [

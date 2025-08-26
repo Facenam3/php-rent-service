@@ -16,7 +16,7 @@ class CarController{
        
 
         $cars = Car::getRecent($limit, $page, $search);
-        $total = Car::count($search);
+        $total = Car::countSearch($search);
 
         return View::render(
             template: 'cars/index',

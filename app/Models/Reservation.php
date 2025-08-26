@@ -75,7 +75,7 @@ class Reservation extends Model {
     }
 
 
-    public static function count(?string $search = null): int {
+    public static function countSearch(?string $search = null): int {
         $db = App::get('database');
 
         $query = "

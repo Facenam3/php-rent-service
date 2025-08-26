@@ -14,7 +14,7 @@ class UserController{
         $page = $_GET['page'] ?? 1;
 
         $users = User::getRecent($limit, $page,$search);
-        $total = User::count($search);
+        $total = User::countSearch($search);
         return View::render(
             template: 'admin/users/users',
             data: [

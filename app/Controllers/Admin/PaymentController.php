@@ -13,7 +13,7 @@ class PaymentController {
         $page = $_GET['page'] ?? 1;
 
         $payments = Payment::getRecent($limit, $page,$search);
-        $total = Payment::count($search);
+        $total = Payment::countSearch($search);
 
         return View::render(
             template: "/admin/payments/payments",
