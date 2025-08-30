@@ -43,6 +43,10 @@ $router->addRouteMiddleware('auth', Auth::class);
  $router->add("GET", "/contact" , "ContactController@contact");
  $router->add("POST", "/contact/store", "ContactController@store");
 
+ $router->add("GET", "/user/dashboard", 'UserController@index', ['auth']);
+ $router->add("GET", '/user/settings', "UserController@settings",['auth']);
+ 
+
 
 ///====================== ADMIN Panel Routes ===========================================
 $router->add("GET", "/admin/dashboard", "Admin\AdminController@index",['auth']);
