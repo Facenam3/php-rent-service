@@ -121,6 +121,29 @@ class Reservation extends Model {
         return $result ? $result : null;
     }
 
+    public static function findbyUserId(int $userId) {
+        $db = App::get('database');
+
+        $sql = "SELECT reservations.*, 
+                users.first_name AS user_name, 
+                cars.image_path,
+                cars.brand AS car_brand, 
+                cars.model AS car_model,
+                lp.name AS pickup_location,
+                ld.name AS dropoff_location
+            FROM reservations
+            LEFT JOIN users ON reservations.user_id = users.id
+            LEFT JOIN cars ON reservations.car_id = cars.id
+            LEFT JOIN locations lp ON reservations.pickup_location_id = lp.id
+            LEFT JOIN locations ld ON reservations.dropoff_location_id = ld.id
+            WHERE reservations.user_id = ?
+        ";
+
+        $result = $db->fetchAll($sql, [$userId], self::class);
+
+        return $result ? $result : null;
+    }
+
     public static function reservationsPending() {
         $db = App::get('database');
 

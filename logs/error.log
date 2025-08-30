@@ -877,3 +877,20 @@
 [2025-08-30 11:30:25] Error: ErrorException: Undefined array key "userThisMonth" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 17
 [2025-08-30 11:38:31] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 36
 [2025-08-30 11:42:37] Error: ErrorException: Undefined array key "allContacts" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 43
+[2025-08-30 20:31:26] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:31:49] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:31:51] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:31:51] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:31:59] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:32:37] Error: ErrorException: Undefined array key "user" in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 10
+[2025-08-30 20:33:22] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:33:22] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:33:23] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:33:50] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:33:50] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:33:51] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:33:51] Error: ErrorException: Attempt to read property "id" on null in C:\xampp\htdocs\php-rent\php-rent-service\app\Controllers\UserController.php on line 11
+[2025-08-30 20:35:06] Error: ErrorException: Attempt to read property "email" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 28
+[2025-08-30 20:35:30] Error: ErrorException: Attempt to read property "car_brand" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 27
+[2025-08-30 20:36:12] Error: ErrorException: Attempt to read property "car_brand" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 27
+[2025-08-30 20:37:35] Error: ErrorException: Attempt to read property "car_brand" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 27
