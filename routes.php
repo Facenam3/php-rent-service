@@ -45,6 +45,7 @@ $router->addRouteMiddleware('auth', Auth::class);
 
  $router->add("GET", "/user/dashboard", 'UserController@index', ['auth']);
  $router->add("GET", '/user/settings', "UserController@settings",['auth']);
+ $router->add("GET", '/user/reservation/{id}/show', "UserController@show",['auth']);
  
 
 

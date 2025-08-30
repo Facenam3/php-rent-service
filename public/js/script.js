@@ -15,13 +15,13 @@ $(document).ready(function () {
     });
 
 
-  const currentPath = window.location.pathname;
-  $(".nav-link").each(function() {
-    const linkPath = $(this).attr("href");
-    if (linkPath === currentPath) {
-      $(this).addClass("active-link");
-    }
-  });
+    const currentPath = window.location.pathname;
+    $(".nav-link").each(function() {
+      const linkPath = $(this).attr("href");
+      if (linkPath === currentPath) {
+        $(this).addClass("active-link");
+      }
+    });
 
  
     $('#user-menu-button').on('click', function(event) {
@@ -37,23 +37,30 @@ $(document).ready(function () {
       }
     });
 
+    $(document).on('click', "#reservation-user-show", function(e) {
+      e.preventDefault();
 
-  $('#contact-form').on('submit', function(e){
-    e.preventDefault();
-
-    let formData = new FormData(this);
-    console.log(formData);
-
-    $.ajax({
-      url: '/contact/store',
-      type: "POST",
-      data: formData,
-      contentType: false,
-      processData: false,
-      success: function(res) {
-        console.log(res);
-        $('#contact-form')[0].reset();
-      }
+      const reservation_id = $(this).data('id');
+      window.location.href = "/user/reservation/" + reservation_id + "/show";
     });
-  });
+
+
+    $('#contact-form').on('submit', function(e){
+      e.preventDefault();
+
+      let formData = new FormData(this);
+      console.log(formData);
+
+      $.ajax({
+        url: '/contact/store',
+        type: "POST",
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(res) {
+          console.log(res);
+          $('#contact-form')[0].reset();
+        }
+      });
+    });
 });
