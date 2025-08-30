@@ -46,6 +46,7 @@
               <th class="px-2 py-3 lg:px-8 lg:py-3">Car Name</th>
               <th class="px-2 py-3 lg:px-8 lg:py-3">Type</th>
               <th class="px-2 py-3 lg:px-8 lg:py-3">Year</th>
+              <th class="px-2 py-3 lg:px-8 lg:py-3">Status</th>
               <th class="px-2 py-3 lg:px-8 lg:py-3 max-w-xs">Price</th>
               <th class="px-2 py-3 lg:px-8 lg:py-3">Action</th>
             </tr>
@@ -58,6 +59,7 @@
                   <td class="px-2 py-3 lg:px-8 lg:py-2"><?= htmlspecialchars("$car->brand $car->model") ?></td>
                   <td class="px-2 py-3 lg:px-8 lg:py-2"><?= htmlspecialchars(ucfirst($car->type)) ?></td>
                   <td class="px-2 py-3 lg:px-8 lg:py-2"><?= htmlspecialchars($car->year) ?>
+                  <td class="px-2 py-3 lg:px-8 lg:py-2"><?= htmlspecialchars($car->status) ?>
                   <td class="px-2 py-3 lg:px-8 lg:py-2"><?= htmlspecialchars($car->price_per_day) ?> $
                   <td class="px-4 py-2">
                     <div class="flex flex-wrap gap-2 ">
