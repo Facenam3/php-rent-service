@@ -29,6 +29,7 @@ class AdminController {
         $completeReservations = Reservation::reservationsCompleted();
 
         //payments
+        $totalPayments = Payment::count();
         $monthlyRavenue = Payment::totalRevenueThisMonth();
         $pendingRavenue = Payment::pendingPaymentsThisMonth();
 
@@ -39,25 +40,42 @@ class AdminController {
         //reviews
         $totalReviews = Review::count();
         $montlyReviews = Review::reviewsThisMonth();
-        
-        return View::render(
-            template: 'admin/dashboard',
-            data: [
+
+        $data = [
+            'users' => [
                 'allUsers' => $allUsers,
                 'monthlyUsers' => $usersThisMonth,
+            ],
+            'cars' => [
                 'allCars' => $totalCars,
                 'bookedCars' => $bookedCars,
                 'availableCars' => $availableCars,
+            ],
+            'reservations' => [
                 'allReservations' => $totalReservations,
                 'pendingRes' => $pendingReservations,
                 'completeRes' => $completeReservations,
+            ],
+            'payments' => [
+                'totalPayments' => $totalPayments,
                 'monthlyRev' => $monthlyRavenue,
                 'pendingRev' => $pendingRavenue,
+            ],
+            'contact-us' => [
                 'allContacts' => $totalContacts,
                 'monthlyContacts' => $montlyContacts,
+            ],
+            'reviews' => [
                 'allReviews' => $totalReviews,
                 'monthlyReviews' => $montlyReviews
-            ],
+            ]
+        ];
+    
+            
+        
+        return View::render(
+            template: 'admin/dashboard',
+            data: $data,
             layout: 'layouts/admin'
         );
     }

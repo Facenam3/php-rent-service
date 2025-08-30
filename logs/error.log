@@ -866,3 +866,14 @@
 [2025-08-26 21:44:43] Error: ArgumentCountError: PDOStatement::setFetchMode() expects exactly 1 arguments for the fetch mode provided, 2 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
 [2025-08-26 21:44:44] Error: ArgumentCountError: PDOStatement::setFetchMode() expects exactly 1 arguments for the fetch mode provided, 2 given in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 53
 [2025-08-26 21:46:10] Error: PDOException: SQLSTATE[HY000]: General error: 1 no such table: contacts in C:\xampp\htdocs\php-rent\php-rent-service\core\Database.php on line 37
+[2025-08-30 11:17:15] Error: ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 42
+[2025-08-30 11:17:33] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:19:54] Error: ErrorException: Undefined array key "users" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:22:20] Error: ErrorException: Undefined array key "users" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:22:21] Error: ErrorException: Undefined array key "users" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:24:18] Error: ErrorException: Undefined array key "users" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:25:09] Error: ErrorException: Undefined array key "users" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:26:24] Error: ErrorException: Undefined variable $users in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 16
+[2025-08-30 11:30:25] Error: ErrorException: Undefined array key "userThisMonth" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 17
+[2025-08-30 11:38:31] Error: ParseError: syntax error, unexpected token ";" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 36
+[2025-08-30 11:42:37] Error: ErrorException: Undefined array key "allContacts" in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\admin\dashboard.php on line 43
