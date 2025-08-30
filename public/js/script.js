@@ -23,6 +23,21 @@ $(document).ready(function () {
     }
   });
 
+ 
+    $('#user-menu-button').on('click', function(event) {
+      event.preventDefault();
+      $('#user-dropdown').toggleClass('hidden');
+    });
+
+    $(document).on('click', function(event) {
+      if (!$(event.target).closest('#user-menu-button').length && !$(event.target).closest('#user-dropdown').length) {
+        if (!$('#user-dropdown').hasClass('hidden')) {
+          $('#user-dropdown').addClass('hidden');
+        }
+      }
+    });
+
+
   $('#contact-form').on('submit', function(e){
     e.preventDefault();
 
