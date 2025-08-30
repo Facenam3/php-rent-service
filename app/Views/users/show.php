@@ -1,16 +1,16 @@
 <div class="text-white p-4 sm:p-6 mt-5">
-  <div class="py-4 sm:px-4 lg:px-8 max-w-full">
+  <div class="py-4 sm:px-4 lg:px-8 max-w-6xl mx-auto">
     <div class="w-full bg-white dark:bg-gray-800 rounded-md border shadow-md text-black p-4 sm:p-6">
 
       <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
         <h1 class="text-xl sm:text-2xl text-orange-600 font-semibold whitespace-nowrap">
           Reservation number <?= $reservation->id ?>
         </h1>
-        <a href="/admin/reservations"
+        <a href="/user/dashboard"
             class="block lg:hidden sm:w-full md:w-2/5 mb-4 inline-block text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3 whitespace-nowrap">
         ← Back to Table
         </a>
-        <a href="/admin/reservations"
+        <a href="/user/dashboard"
             class="hidden lg:inline-block focus:outline-none text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-lg px-5 py-2 me-2 mb-2 dark:focus:ring-orange-900" >
             Back To Reservations
         </a>
