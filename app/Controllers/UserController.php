@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Reservation;
+use App\Models\User;
 use Core\View;
 
 class UserController {
@@ -17,9 +18,12 @@ class UserController {
     }
 
     public function settings() {
+        $user_id = $_SESSION['user_id'] ?? null;
+        $user = User::findById($user_id);
+
         return View::render(
             template: 'users/settings',
-            data: [],
+            data: ['user' => $user],
             layout: "layouts/main"
         );
     }
