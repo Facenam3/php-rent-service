@@ -110,6 +110,66 @@
         </div>
     </div>
 </div>
+<section class="bg-gray-50 dark:bg-gray-900 py-16">
+    <div class="w-full lg:w-4/5 mx-auto px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                Why Choose Us?
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                Discover why travelers across North Macedonia trust our car rental services.
+            </p>
+        </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
+                <div class="text-orange-600 text-4xl mb-4">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Transparent Pricing</h3>
+                <p class="text-gray-600 dark:text-gray-300">No hidden fees. Know exactly what you pay for every rental.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
+                <div class="text-orange-600 text-4xl mb-4">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Premium Cars</h3>
+                <p class="text-gray-600 dark:text-gray-300">Wide selection of new and reliable vehicles for all trips.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
+                <div class="text-orange-600 text-4xl mb-4">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">24/7 Support</h3>
+                <p class="text-gray-600 dark:text-gray-300">Always here to assist you, wherever your journey takes you.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
+                <div class="text-orange-600 text-4xl mb-4">
+                    <i class="fas fa-road"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Flexible Rentals</h3>
+                <p class="text-gray-600 dark:text-gray-300">Short-term or long-term, local or cross-border rentals.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
+                <div class="text-orange-600 text-4xl mb-4">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Trusted by Travelers</h3>
+                <p class="text-gray-600 dark:text-gray-300">Hundreds of happy customers across Europe rely on us.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
+              <div class="text-orange-600 text-4xl mb-4">
+                  <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Nationwide Coverage</h3>
+              <p class="text-gray-600 dark:text-gray-300">Pick up and drop off cars at multiple locations across North Macedonia.</p>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="reviews-carousel relative w-full max-w-full mx-auto p-6 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center mb-6 mt-4 text-orange-600">Customer Reviews</h2>
             <div 
