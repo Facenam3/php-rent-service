@@ -13,7 +13,7 @@
                         placeholder="John"
                         value="<?= htmlspecialchars($_SESSION['old']['first_name'] ?? '') ?>"
                         class="w-full p-3 text-base bg-white text-gray-900 border border-gray-300 rounded-lg focus:ring-orange-500 focus:border-orange-500"
-                        
+                        required
                     />
                     <?php if (isset($_SESSION['errors']['first_name'])): ?>
                         <p class="mt-2 w-full text-red-600 bg-gray-200 rounded-md p-2"><?= htmlspecialchars($_SESSION['errors']['first_name']) ?></p>
@@ -79,9 +79,5 @@
                     Register with Google
                 </a>
             </div>
-            <?php
-                unset($_SESSION['errors']);
-                unset($_SESSION['old']);
-            ?>
     </div>
 </div>
