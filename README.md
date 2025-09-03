@@ -95,38 +95,38 @@ Follow these steps to run the project on your local machine:
    cd php-rent-service
 2. Install dependencies:
 
-bash
-Copy code
-composer install
+    bash
+    Copy code
+    composer install
 
 3. Set up environment variables:
 
-Copy .env.example to .env
-
-Fill in your credentials for:
-
-Database (SQLite / MySQL if configured)
-
-Mail (SMTP for PHPMailer)
-
-Google OAuth keys
-
-Stripe test keys
+    Copy .env.example to .env
+    
+    Fill in your credentials for:
+    
+    Database (SQLite / MySQL if configured)
+    
+    Mail (SMTP for PHPMailer)
+    
+    Google OAuth keys
+    
+    Stripe test keys
 
 4. Import the migrations and initial data:
 
-bash
-Copy code
-composer schema:load      # loads the database schema
-composer schema:fixtures  # loads sample data for testing
+    bash
+    Copy code
+    composer schema:load      # loads the database schema
+    composer schema:fixtures  # loads sample data for testing
 
 5. Start the development server:
 
-bash
-Copy code
-php -S localhost:8000 -t public
+    bash
+    Copy code
+    php -S localhost:8000 -t public
 
 6. Open in your browser:
-http://localhost:8000
+    http://localhost:8000
 
 ✅ Now you can register, log in, make reservations, and explore the admin panel locally.
