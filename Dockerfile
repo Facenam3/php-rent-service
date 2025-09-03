@@ -14,10 +14,14 @@ RUN a2enmod rewrite
 
 # Set Apache DocumentRoot to /var/www/html/public
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf \
- && sed -i 's|<Directory /var/www/>|<Directory /var/www/html/public/>|g' /etc/apache2/apache2.conf
+  && sed -i 's|<Directory /var/www/>|<Directory /var/www/html/public/>|g' /etc/apache2/apache2.conf
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY . .
+
+# **Install Composer dependencies**
+RUN composer install --no-dev --optimize-autoloader
+
 RUN chown -R www-data:www-data /var/www/html
 
 COPY docker-entrypoint.sh /usr/local/bin/
