@@ -10,24 +10,24 @@ use App\Models\Location;
 
 $users = [
     [
-        'first_name'  => "Dalibor",
-        'last_name' => "Jovanovski",
-        'email' => "dalibor@test.com",
-        'password' => password_hash('dacko123', PASSWORD_BCRYPT),
+        'first_name'  => "John",
+        'last_name' => "Doe",
+        'email' => "admin1@rent.com",
+        'password' => password_hash('admin123', PASSWORD_BCRYPT),
         'role' => "admin"        
     ],
     [
-        'first_name'  => "Sara",
-        'last_name' => "Jovanovska",
-        'email' => "sarchito@test.com",
-        'password' => password_hash('sarchito', PASSWORD_BCRYPT),
+        'first_name'  => "Jane",
+        'last_name' => "Doe",
+        'email' => "janedoe@rent.com",
+        'password' => password_hash('admin321', PASSWORD_BCRYPT),
         'role' => "admin"        
     ],
     [
-        'first_name'  => "Grujo",
-        'last_name' => "Jovanovski",
-        'email' => "grujo@test.com",
-        'password' => password_hash('grujo123', PASSWORD_BCRYPT),
+        'first_name'  => "Michael",
+        'last_name' => "Doe",
+        'email' => "michael@rent.com",
+        'password' => password_hash('admin456', PASSWORD_BCRYPT),
         'role' => "admin"        
     ]
 ];
