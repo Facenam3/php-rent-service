@@ -25,11 +25,12 @@ COPY . .
 # Set permissions for storage / logs if needed
 RUN chown -R www-data:www-data /var/www/html
 
-# Run migrations and seeders
-RUN composer schema:load && composer schema:fixtures
+# Copy entrypoint script
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Expose port 80
 EXPOSE 80
 
-# Start Apache server
-CMD ["apache2-foreground"]
+# Start container with entrypoint
+CMD ["docker-entrypoint.sh"]
