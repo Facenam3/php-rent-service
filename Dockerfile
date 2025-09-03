@@ -4,12 +4,14 @@ FROM php:8.2-apache
 # Set working directory inside container
 WORKDIR /var/www/html
 
-# Install required PHP extensions
+# Install required packages and PHP extensions
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
     git \
-    && docker-php-ext-install pdo pdo_sqlite pdo_mysql zip
+    libsqlite3-dev \
+    && docker-php-ext-install pdo pdo_sqlite pdo_mysql zip \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
