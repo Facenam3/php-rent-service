@@ -19,24 +19,18 @@ RUN a2enmod rewrite
 # Copy composer from official Composer image
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copy only composer files first to install dependencies
-COPY composer.json composer.lock ./
-
-# Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
-
-# Copy the rest of the project files
+# Copy all project files to working directory
 COPY . .
 
-# Set permissions for storage / logs
+# Set permissions for storage / uploads
 RUN chown -R www-data:www-data /var/www/html
 
-# Copy entrypoint script
+# Copy and set entrypoint
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-# Expose port 80
+# Expose Apache port
 EXPOSE 80
 
-# Start container with entrypoint
+# Use entrypoint to run migrations and start Apache
 CMD ["docker-entrypoint.sh"]
