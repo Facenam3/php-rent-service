@@ -1,8 +1,13 @@
+# Enable mod_rewrite
 RewriteEngine On
-RewriteBase /php-rent-service/
+RewriteBase /
 
+# Serve existing files/directories directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.\*)$ index.php [QSA,L]
 
+# Forward all other requests to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Default index
 DirectoryIndex index.php

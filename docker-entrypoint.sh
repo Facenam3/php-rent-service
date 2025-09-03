@@ -1,15 +1,15 @@
 #!/bin/bash
 set -e
 
-# Optional: export environment variables from .env (if needed)
+# Export env vars from .env if present
 if [ -f .env ]; then
     export $(grep -v '^#' .env | xargs)
 fi
 
-# Create database folder if it doesn't exist
+# Ensure database folder exists
 mkdir -p database
 
-# Run migrations and fixtures only if SQLite file doesn't exist
+# Run migrations + fixtures only if SQLite file doesn't exist
 if [ ! -f "./database/rent.sqlite" ]; then
     echo "Running migrations..."
     composer schema:load
@@ -17,7 +17,7 @@ if [ ! -f "./database/rent.sqlite" ]; then
     composer schema:fixtures
 fi
 
-# Set permissions for uploads (optional)
+# Ensure upload folders exist
 mkdir -p public/uploads/vehicle
 chown -R www-data:www-data public/uploads
 
