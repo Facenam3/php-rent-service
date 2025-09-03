@@ -22,9 +22,6 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # Copy all project files to working directory
 COPY . .
 
-# Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader
-
 # Set permissions for storage / logs if needed
 RUN chown -R www-data:www-data /var/www/html
 
