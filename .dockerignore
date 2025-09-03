@@ -1,0 +1,10 @@
+vendor
+node_modules
+.env
+.env.local
+.env.*.backup
+.idea
+.vscode
+*.log
+*.sqlite
+.DS_Store
