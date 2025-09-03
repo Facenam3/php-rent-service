@@ -98,6 +98,7 @@ Follow these steps to run the project on your local machine:
 bash
 Copy code
 composer install
+
 3. Set up environment variables:
 
 Copy .env.example to .env
@@ -118,11 +119,13 @@ bash
 Copy code
 composer schema:load      # loads the database schema
 composer schema:fixtures  # loads sample data for testing
+
 5. Start the development server:
 
 bash
 Copy code
 php -S localhost:8000 -t public
+
 6. Open in your browser:
 http://localhost:8000
 
