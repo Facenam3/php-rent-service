@@ -10,7 +10,8 @@
                 </div>
             </div>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-6">
-                <form action="" class="bg-white border-gray-200 dark:bg-gray-800 rounded-lg shadow-sm">
+                <form action="" method="POST" data-id="<?= $user->id ?>" id="user-settings" class="bg-white border-gray-200 dark:bg-gray-800 rounded-lg shadow-sm">
+                    <?= csrf_token(); ?>
                     <div class="flex flex-col gap-6 lg:flex-row">
                         <div class="w-full lg:w-1/2">
                              <div class="mb-2 p-3">

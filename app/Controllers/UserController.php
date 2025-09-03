@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\Reservation;
 use App\Models\User;
+use Core\Router;
 use Core\View;
 
 class UserController {
@@ -37,5 +38,21 @@ class UserController {
             ],
             layout: "layouts/main"
         );
+    }
+
+    public function update($id) {
+        $user = User::find($id);
+        $password = $_POST['password'];
+        $hashed_password = password_hash($password,PASSWORD_BCRYPT);
+        $user->first_name = $_POST['first_name'];
+        $user->last_name = $_POST['last_name'];
+        $user->gender = $_POST['gender'];
+        $user->email = $_POST['email'];
+        $user->password = $hashed_password;
+        $user->locale = $_POST['locale'];
+        $user->picture = $_POST['picture'];
+        $user->save();
+
+        Router::redirect("/user/settings");
     }
 }
