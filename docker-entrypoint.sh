@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-# Run migrations and seed data
+# Run migrations and fixtures
 composer schema:load
 composer schema:fixtures
 
-# Start Apache
+# Start Apache in foreground
 apache2-foreground

@@ -19,10 +19,16 @@ RUN a2enmod rewrite
 # Copy composer from official Composer image
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# Copy all project files to working directory
+# Copy only composer files first to install dependencies
+COPY composer.json composer.lock ./
+
+# Install PHP dependencies
+RUN composer install --no-dev --optimize-autoloader
+
+# Copy the rest of the project files
 COPY . .
 
-# Set permissions for storage / logs if needed
+# Set permissions for storage / logs
 RUN chown -R www-data:www-data /var/www/html
 
 # Copy entrypoint script
