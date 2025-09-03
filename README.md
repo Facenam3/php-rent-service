@@ -68,6 +68,7 @@ It includes:
 - Mobile-friendly user dashboard
 
 💡 Learning Approach
+
 This project was developed while following various online learning resources (Udemy, YouTube, GeeksforGeeks, etc.).
 The codebase is customized and authored to fit my own understanding and architecture preferences.
 New integrations such as Google OAuth and mailing services were added to explore working with external APIs and improve user experience.
@@ -83,3 +84,46 @@ New integrations such as Google OAuth and mailing services were added to explore
 - Stripe (test mode payments)
 - Git + GitHub for version control
 - JavaScript / jQuery
+
+  ## 🚀 Run Locally
+
+Follow these steps to run the project on your local machine:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Facenam3/php-rent-service.git
+   cd php-rent-service
+2. Install dependencies:
+
+bash
+Copy code
+composer install
+3. Set up environment variables:
+
+Copy .env.example to .env
+
+Fill in your credentials for:
+
+Database (SQLite / MySQL if configured)
+
+Mail (SMTP for PHPMailer)
+
+Google OAuth keys
+
+Stripe test keys
+
+4. Import the migrations and initial data:
+
+bash
+Copy code
+composer schema:load      # loads the database schema
+composer schema:fixtures  # loads sample data for testing
+5. Start the development server:
+
+bash
+Copy code
+php -S localhost:8000 -t public
+6. Open in your browser:
+http://localhost:8000
+
+✅ Now you can register, log in, make reservations, and explore the admin panel locally.
