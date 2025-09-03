@@ -12,9 +12,11 @@ RUN apt-get update && apt-get install -y \
 
 RUN a2enmod rewrite
 
-# Set Apache DocumentRoot to /var/www/html/public
+# Set Apache DocumentRoot to /var/www/html/public and enable .htaccess overrides
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf \
-  && sed -i 's|<Directory /var/www/>|<Directory /var/www/html/public/>|g' /etc/apache2/apache2.conf
+  && sed -i 's|<Directory /var/www/>|<Directory /var/www/html/public/>|g' /etc/apache2/apache2.conf \
+  && sed -i '/<Directory \/var\/www\/html\/public>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY . .
