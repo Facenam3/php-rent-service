@@ -900,3 +900,7 @@
 [2025-09-03 23:57:32] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
 [2025-09-03 23:57:33] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
 [2025-09-03 23:57:34] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
+[2025-09-04 00:07:33] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
+[2025-09-04 00:07:34] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
+[2025-09-04 00:07:35] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
+[2025-09-04 00:07:35] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
