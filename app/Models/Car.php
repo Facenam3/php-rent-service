@@ -46,7 +46,7 @@ class Car extends Model {
         }
 
         if($imageContents !== false) {
-            $uploadDir = "uploads/vehicle/";
+            $uploadDir = __DIR__ . '/../../public/uploads/vehicle/';
             if(!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
