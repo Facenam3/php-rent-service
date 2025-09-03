@@ -95,7 +95,7 @@ Follow these steps to run the project on your local machine:
    cd php-rent-service
 2. Install dependencies:
 
-    bash
+    ```bash
     Copy code
     composer install
 
@@ -115,14 +115,14 @@ Follow these steps to run the project on your local machine:
 
 4. Import the migrations and initial data:
 
-    bash
+    ```bash
     Copy code
     composer schema:load      # loads the database schema
     composer schema:fixtures  # loads sample data for testing
 
 5. Start the development server:
 
-    bash
+    ```bash
     Copy code
     php -S localhost:8000 -t public
 
