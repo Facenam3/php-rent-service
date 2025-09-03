@@ -1,20 +1,16 @@
-# Enable Rewrite Engine
+# Enable mod_rewrite
+
 RewriteEngine On
 
-# If the requested file or directory exists, serve it directly
+# If the requested file or directory exists, serve it
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Otherwise, route everything to index.php
-RewriteRule ^(.*)$ index.php [QSA,L]
 
-# Optional: Set default index
+RewriteRule ^(.\*)$ index.php [QSA,L]
+
+# Default index file
+
 DirectoryIndex index.php
-
-# Optional: Security headers
-<IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
-    Header set X-Frame-Options "SAMEORIGIN"
-    Header set X-XSS-Protection "1; mode=block"
-</IfModule>
-

@@ -894,3 +894,6 @@
 [2025-08-30 20:35:30] Error: ErrorException: Attempt to read property "car_brand" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 27
 [2025-08-30 20:36:12] Error: ErrorException: Attempt to read property "car_brand" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 27
 [2025-08-30 20:37:35] Error: ErrorException: Attempt to read property "car_brand" on int in C:\xampp\htdocs\php-rent\php-rent-service\app\Views\users\dashboard.php on line 27
+[2025-09-03 23:46:42] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
+[2025-09-03 23:46:45] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
+[2025-09-03 23:46:46] Error: PHPMailer\PHPMailer\Exception: Invalid address:  (From):  in C:\xampp\htdocs\php-rent\php-rent-service\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 1354
