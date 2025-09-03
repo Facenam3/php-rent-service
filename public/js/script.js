@@ -44,6 +44,27 @@ $(document).ready(function () {
       window.location.href = "/user/reservation/" + reservation_id + "/show";
     });
 
+    $(document).on('submit', "#user-settings",function(e){
+      e.preventDefault();
+
+      let formData = new FormData(this);
+      const user_id = $(this).data('id');
+      console.log(formData);
+
+      $.ajax({
+        url: "/user/" + user_id + "/update",
+        type: "POST",
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(res) {
+          console.log(res);
+          
+          window.location.href = "/user/dashboard";
+        }
+      });
+    });
+
 
     $('#contact-form').on('submit', function(e){
       e.preventDefault();
