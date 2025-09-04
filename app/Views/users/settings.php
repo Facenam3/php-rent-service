@@ -40,7 +40,9 @@
                                     </label>
                                     <select name="gender" id="gender"
                                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                                        <option value="<?= $user->gender ?>" selected><?= ucfirst($user->gender) ?></option>
+                                        <option value="<?= htmlspecialchars($user->gender ?? '') ?>" selected>
+                                            <?= ucfirst($user->gender ?? '') ?>
+                                        </option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
                                     </select>
