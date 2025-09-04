@@ -1,11 +1,6 @@
 #!/bin/bash
 set -e
 
-# Export env vars from .env if present
-if [ -f .env ]; then
-    export $(grep -v '^#' .env | xargs)
-fi
-
 # Ensure database folder exists
 mkdir -p database
 
@@ -19,7 +14,7 @@ fi
 
 # Ensure upload folders exist
 mkdir -p public/uploads/vehicle
-chown -R www-data:www-data public/uploads
+chmod -R 775 public/uploads
 
 # Start Apache in foreground
 apache2-foreground
