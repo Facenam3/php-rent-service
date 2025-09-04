@@ -50,8 +50,8 @@ class StripeController {
                     'quantity' => 1
                 ]],
                 'mode' => 'payment',
-                'success_url' => 'http://localhost:8000/payments/success?session_id={CHECKOUT_SESSION_ID}&reservation_id=' . $reservationId,
-                'cancel_url'  => 'http://localhost:8000/payments/cancel?reservation_id=' . $reservationId
+                'success_url' => 'https://php-rent-service-production.up.railway.app/payments/success?session_id={CHECKOUT_SESSION_ID}&reservation_id=' . $reservationId,
+                'cancel_url'  => 'https://php-rent-service-production.up.railway.app/payments/cancel?reservation_id=' . $reservationId
             ]);
         
             Router::redirect($session->url);
