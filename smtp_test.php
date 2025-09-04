@@ -17,7 +17,7 @@ try {
     $mail->Debugoutput = 'echo';
 
     $mail->setFrom(getenv('FROM_EMAIL'), 'Test');
-    $mail->addAddress('your-email@example.com'); // replace with your real email for testing
+    $mail->addAddress('r3ntacar3@gmail.com'); // replace with your real email for testing
     $mail->Subject = 'SMTP Connection Test';
     $mail->Body = 'This is a test email sent by PHPMailer to verify SMTP.';
 
