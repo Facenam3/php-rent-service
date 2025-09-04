@@ -20,11 +20,16 @@ class Mailer {
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
         $this->mail->Port = $config['port'];
 
-        $this->mail->SMTPDebug = 2;
-        $this->mail->Debugoutput = 'error_log'; 
+        // Enable debug to error log for detailed output
+        $this->mail->SMTPDebug = 2; 
+        $this->mail->Debugoutput = 'error_log';
+
+        // Set lower timeout for quicker feedback
+        $this->mail->Timeout = 10;
 
         $this->mail->setFrom($config['from_email'], $config['from_name']);
     }
+
 
 
    public function send(string $to, string $subject, string $body) : bool {
