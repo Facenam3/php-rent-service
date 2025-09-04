@@ -17,11 +17,15 @@ class Mailer {
         $this->mail->SMTPAuth = true;
         $this->mail->Username = $config['username'];
         $this->mail->Password = $config['password'];
-        $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
         $this->mail->Port = $config['port'];
+
+        $this->mail->SMTPDebug = 2;
+        $this->mail->Debugoutput = 'error_log'; 
 
         $this->mail->setFrom($config['from_email'], $config['from_name']);
     }
+
 
    public function send(string $to, string $subject, string $body) : bool {
         try {
