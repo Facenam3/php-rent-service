@@ -17,7 +17,7 @@ $router->addRouteMiddleware('auth', Auth::class);
 
  $router->add("GET", "/login", "AuthController@create");
  $router->add("POST", '/login', "AuthController@store");
- $router->add('POST', '/logout', 'Authcontroller@destroy');
+ $router->add('POST', '/logout', 'AuthController@destroy');
  $router->add('GET', '/register', "AuthController@register");
  $router->add("POST", "/register", "AuthController@storeUser");
 
