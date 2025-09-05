@@ -24,7 +24,7 @@ class Mailer {
 
         $this->mail->setFrom($config['from_email'], $config['from_name']);
 
-        $this->mail->SMTPDebug  = 0; 
+        $this->mail->SMTPDebug  = 2; 
         $this->mail->Debugoutput = 'error_log';
     }
 
