@@ -42,10 +42,16 @@ It includes:
   
 📧 Email Notifications :
 
+- Local development: PHPMailer using Gmail SMTP (requires App Password)
+- Production (Railway): PHPMailer using SendGrid SMTP on port 2525
 - Welcome email on registration
 - Sends a reservation confirmation email
 - Stripe card payments (test mode) with success/cancel flows
 - Notification emails on user sign-in/register
+
+# Email Configuration
+- Local: set `MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD`, `MAIL_FROM_EMAIL`, `MAIL_FROM_NAME` in `.env`
+- Production: SendGrid environment variables will be used automatically on Railway.
 
 📊 Admin Panel & Dashboard Analytics:
 
@@ -67,6 +73,11 @@ It includes:
 - Alpine.js and JavaScript for reactive UI
 - Mobile-friendly user dashboard
 
+## Git Workflow
+- `main` branch → Production-ready (SendGrid)
+- `development` branch → Local development (Gmail)
+- Merge `development` → `main` only after testing locally
+
 💡 Learning Approach
 
 This project was developed while following various online learning resources (Udemy, YouTube, GeeksforGeeks, etc.).
@@ -80,6 +91,7 @@ New integrations such as Google OAuth and mailing services were added to explore
 - Alpine.js
 - Composer (PSR-4 autoloading)
 - PHPMailer (Gmail SMTP for sending emails)
+- SendGrid SMTP
 - Google API PHP Client (OAuth authentication)
 - Stripe (test mode payments)
 - Git + GitHub for version control
