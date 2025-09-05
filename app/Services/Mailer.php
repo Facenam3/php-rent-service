@@ -13,35 +13,26 @@ class Mailer {
         $this->mail = new PHPMailer(true);
 
         $this->mail->isSMTP();
-        $this->mail->Host = $config['host'];
-        $this->mail->SMTPAuth = true;
-        $this->mail->Username = $config['username'];
-        $this->mail->Password = $config['password'];
-        $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
-        $this->mail->Port = $config['port'];
-
-        // Enable debug to error log for detailed output
-        $this->mail->SMTPDebug = 4; 
-        $this->mail->Debugoutput = function($str, $level) {
-            error_log("SMTP DEBUG [$level]: $str");
-        };
-
-
-        // Set lower timeout for quicker feedback
-        $this->mail->Timeout = 10;
+        $this->mail->Host       = $config['host'];
+        $this->mail->SMTPAuth   = true;
+        $this->mail->Username   = $config['username'];
+        $this->mail->Password   = $config['password'];
+        $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $this->mail->Port       = $config['port'];
 
         $this->mail->setFrom($config['from_email'], $config['from_name']);
+
+        $this->mail->SMTPDebug  = 0; 
+        $this->mail->Debugoutput = 'error_log';
     }
 
-
-
-   public function send(string $to, string $subject, string $body) : bool {
+    public function send(string $to, string $subject, string $body): bool {
         try {
             $this->mail->clearAddresses();
             $this->mail->addAddress($to);
             $this->mail->isHTML(true);
             $this->mail->Subject = $subject;
-            $this->mail->Body = $body;
+            $this->mail->Body    = $body;
 
             return $this->mail->send();
         } catch (Exception $e) {
