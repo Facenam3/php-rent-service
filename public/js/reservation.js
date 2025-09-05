@@ -28,9 +28,7 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('reservationWizard', reservationWizard);
 });
 
-
-
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', () => {
     function formatDateTime(date) {
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -42,29 +40,30 @@ $(document).ready(function() {
 
     function applyDateLimits(inputId) {
         const el = document.getElementById(inputId);
-        if (!el) return; 
+        if (!el) return;
 
         const now = new Date();
-        el.min = formatDateTime(now); 
+        el.min = formatDateTime(now);
 
         const maxDate = new Date();
         maxDate.setMonth(maxDate.getMonth() + 6);
         el.max = formatDateTime(maxDate);
 
-
-        el.addEventListener("input", function () {
+        el.addEventListener('change', function () {
             const selected = new Date(this.value);
+            const now = new Date();
             if (selected < now) {
-                alert("Please select a time in the future.");
-                this.value = "";
+                alert('Please select a time in the future.');
+                this.value = '';
             }
         });
-      }
+    }
 
- 
-      applyDateLimits("start_date");
-      applyDateLimits("end_date");
+    applyDateLimits('start_date');
+    applyDateLimits('end_date');
+});
 
+$(document).ready(function() {
     $(document).on("submit", "#reservation-form", function(e) {
       e.preventDefault();
 
