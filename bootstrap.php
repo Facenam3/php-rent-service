@@ -17,5 +17,17 @@ $config = require_once __DIR__ . '/config.php';
 App::bind('config', $config);
 App::bind('database',  new Database($config['database']));
 App::bind('google', $config['google']);
-App::bind('mailer', new Mailer($config['mail']));
+
+$appEnv = getenv('APP_ENV') ?: 'development';
+
+$mailConfig = [
+    'host'       => getenv('MAIL_HOST'),
+    'username'   => getenv('MAIL_USERNAME'),
+    'password'   => getenv('MAIL_PASSWORD'),
+    'port'       => getenv('MAIL_PORT'),
+    'from_email' => getenv('MAIL_FROM_EMAIL'),
+    'from_name'  => getenv('MAIL_FROM_NAME'),
+];
+
+App::bind('mailer', new Mailer($mailConfig));
 
