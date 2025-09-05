@@ -21,8 +21,11 @@ class Mailer {
         $this->mail->Port = $config['port'];
 
         // Enable debug to error log for detailed output
-        $this->mail->SMTPDebug = 2; 
-        $this->mail->Debugoutput = 'error_log';
+        $this->mail->SMTPDebug = 4; 
+        $this->mail->Debugoutput = function($str, $level) {
+            error_log("SMTP DEBUG [$level]: $str");
+        };
+
 
         // Set lower timeout for quicker feedback
         $this->mail->Timeout = 10;
