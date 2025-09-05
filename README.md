@@ -49,7 +49,7 @@ It includes:
 - Stripe card payments (test mode) with success/cancel flows
 - Notification emails on user sign-in/register
 
-# Email Configuration
+📧 Email Configuration
 - Local: set `MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD`, `MAIL_FROM_EMAIL`, `MAIL_FROM_NAME` in `.env`
 - Production: SendGrid environment variables will be used automatically on Railway.
 
@@ -73,11 +73,6 @@ It includes:
 - Alpine.js and JavaScript for reactive UI
 - Mobile-friendly user dashboard
 
-## Git Workflow
-- `main` branch → Production-ready (SendGrid)
-- `development` branch → Local development (Gmail)
-- Merge `development` → `main` only after testing locally
-
 💡 Learning Approach
 
 This project was developed while following various online learning resources (Udemy, YouTube, GeeksforGeeks, etc.).
@@ -96,6 +91,12 @@ New integrations such as Google OAuth and mailing services were added to explore
 - Stripe (test mode payments)
 - Git + GitHub for version control
 - JavaScript / jQuery
+
+## Git Workflow
+
+- `main` branch → Production-ready (SendGrid)
+- `development` branch → Local development (Gmail)
+- Merge `development` → `main` only after testing locally
 
   ## 🚀 Run Locally
 
