@@ -20,6 +20,8 @@ class Mailer {
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $this->mail->Port       = $config['port'];
 
+        $this->mail->Timeout    = $config['timeout'] ?? 10;
+
         $this->mail->setFrom($config['from_email'], $config['from_name']);
 
         $this->mail->SMTPDebug  = 0; 
@@ -36,6 +38,7 @@ class Mailer {
 
             return $this->mail->send();
         } catch (Exception $e) {
+            // Log error, do NOT block request
             error_log('Mailer Error: ' . $e->getMessage());
             return false;
         }
